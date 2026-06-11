@@ -1,0 +1,9 @@
+job_id,part_name,material,qty,due_date,requested_machine,customer,notes
+J-1001,Spindle housing,Aluminium 6061,12,2026-06-25,milling,Vortex Drives,standard tolerance +/-0.05mm
+J-1002,Drive shaft,Steel 4140,40,2026-06-09,turning,Kessler Automotive,OVERDUE - customer escalated twice
+J-1003,Sensor bracket,Stainless 316,200,2026-06-12,laser,NordHVAC,tight slot pattern at-risk
+J-1004,Mold insert,Tool steel H13,2,2026-07-02,edm,PrecisionMold GmbH,fine EDM finish required
+J-1005,Flange ring,Aluminium 7075,25,2026-06-10,turning,Vortex Drives,high priority - line stoppage if late
+J-1006,Cover plate,Brass C360,60,2026-06-28,milling,Kessler Automotive,low priority restock
+J-1007,Heat exchanger fin,Copper C110,500,2026-06-13,laser,NordHVAC,batch run at-risk on capacity
+J-1008,Gear blank,Steel 4140,18,2026-06-24,turning,PrecisionMold GmbH,standard

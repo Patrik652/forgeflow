@@ -1,0 +1,13 @@
+# secrets
+.env
+*.local
+
+# codex-runner runtime state
+.plan/
+
+# node / n8n
+node_modules/
+.n8n/
+
+# os
+.DS_Store
