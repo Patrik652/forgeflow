@@ -1,0 +1,560 @@
+{
+  "name": "forgeflow-job-tracker",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "b8ff4e2d-92f8-47d5-a9a8-6a9f84d8f101",
+      "name": "Manual Demo Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -920,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "path": "forgeflow/job",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "2c36569d-9b84-4389-b79b-297f92f8914e",
+      "name": "Webhook - CNC Job Intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -920,
+        -120
+      ],
+      "webhookId": "forgeflow-job-intake"
+    },
+    {
+      "parameters": {
+        "jsCode": "return [\n  { json: { job_id: 'J-1001', part_name: 'Spindle housing', material: 'Aluminium 6061', qty: 12, due_date: '2026-06-25', requested_machine: 'milling', customer: 'Vortex Drives', notes: 'standard tolerance +/-0.05mm' } },\n  { json: { job_id: 'J-1002', part_name: 'Drive shaft', material: 'Steel 4140', qty: 40, due_date: '2026-06-09', requested_machine: 'turning', customer: 'Kessler Automotive', notes: 'OVERDUE - customer escalated twice' } },\n  { json: { job_id: 'J-1003', part_name: 'Sensor bracket', material: 'Stainless 316', qty: 200, due_date: '2026-06-12', requested_machine: 'laser', customer: 'NordHVAC', notes: 'tight slot pattern at-risk' } },\n  { json: { job_id: 'J-1004', part_name: 'Mold insert', material: 'Tool steel H13', qty: 2, due_date: '2026-07-02', requested_machine: 'edm', customer: 'PrecisionMold GmbH', notes: 'fine EDM finish required' } },\n  { json: { job_id: 'J-1005', part_name: 'Flange ring', material: 'Aluminium 7075', qty: 25, due_date: '2026-06-10', requested_machine: 'turning', customer: 'Vortex Drives', notes: 'high priority - line stoppage if late' } },\n  { json: { job_id: 'J-1006', part_name: 'Cover plate', material: 'Brass C360', qty: 60, due_date: '2026-06-28', requested_machine: 'milling', customer: 'Kessler Automotive', notes: 'low priority restock' } },\n  { json: { job_id: 'J-1007', part_name: 'Heat exchanger fin', material: 'Copper C110', qty: 500, due_date: '2026-06-13', requested_machine: 'laser', customer: 'NordHVAC', notes: 'batch run at-risk on capacity' } },\n  { json: { job_id: 'J-1008', part_name: 'Gear blank', material: 'Steel 4140', qty: 18, due_date: '2026-06-24', requested_machine: 'turning', customer: 'PrecisionMold GmbH', notes: 'standard' } }\n];"
+      },
+      "id": "bd1f3d51-8f32-4073-a071-971f7d5fb809",
+      "name": "Sample CSV Jobs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -680,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map((item) => {\n  const body = item.json.body ?? item.json;\n  return {\n    json: {\n      job_id: body.job_id,\n      part_name: body.part_name,\n      material: body.material,\n      qty: Number(body.qty),\n      due_date: body.due_date,\n      requested_machine: String(body.requested_machine || '').toLowerCase(),\n      customer: body.customer,\n      notes: body.notes || '',\n      received_at: new Date().toISOString()\n    }\n  };\n});"
+      },
+      "id": "9f7da690-d871-4f6e-bc61-83e758f53a7a",
+      "name": "Normalize Job",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -420,
+        20
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "model": "claude-sonnet-4-5",
+        "prompt": "Classify this CNC production job. Return compact JSON only with keys priority (low|medium|high), machine_type (milling|turning|laser|edm), eta_risk (on_track|at_risk|late), and reason. Today is 2026-06-11. Late means due_date is before today. High priority includes notes containing high priority, line stoppage, escalated, or OVERDUE. Job: {{$json}}",
+        "options": {
+          "maxTokens": 300,
+          "temperature": 0
+        }
+      },
+      "id": "8ed917d8-7372-45a7-8a4e-b3e428970e1f",
+      "name": "Claude / Anthropic Classifier",
+      "type": "@n8n/n8n-nodes-langchain.anthropic",
+      "typeVersion": 1,
+      "position": [
+        -120,
+        20
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "__REPLACE_WITH_ANTHROPIC_CREDENTIAL_ID__",
+          "name": "Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map((item) => {\n  const job = item.json;\n  const text = job.text || job.output || job.completion || job.response || '{}';\n  let classification;\n  try {\n    classification = typeof text === 'string' ? JSON.parse(text.replace(/^```json\\s*|```$/g, '').trim()) : text;\n  } catch (error) {\n    classification = {\n      priority: 'medium',\n      machine_type: job.requested_machine,\n      eta_risk: 'at_risk',\n      reason: 'Classifier returned non-JSON; planner review required'\n    };\n  }\n\n  return {\n    json: {\n      ...job,\n      priority: classification.priority,\n      machine_type: classification.machine_type || job.requested_machine,\n      eta_risk: classification.eta_risk,\n      classification_reason: classification.reason,\n      alert_required: classification.eta_risk === 'late' || classification.priority === 'high'\n    }\n  };\n});"
+      },
+      "id": "4066ec6c-99b8-479f-94fd-246ee2af90bd",
+      "name": "Parse Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        160,
+        20
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "milling",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "milling"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "turning",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "turning"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "laser",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "laser"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "edm",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "edm"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "0d044b9e-b92d-4b38-a315-554b85e2974f",
+      "name": "Switch - Route by Machine",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [
+        440,
+        20
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0b772868-df2a-4f51-a365-0d71e5ac48aa",
+      "name": "Milling Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        700,
+        -220
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "8d73da95-5fec-46dc-93e7-d645dc7f548c",
+      "name": "Turning Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        700,
+        -60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5b067ea2-8de7-42e1-83e5-49cab3368f18",
+      "name": "Laser Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        700,
+        100
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a380d091-bdd7-4667-838d-a8c9a6dac37a",
+      "name": "EDM Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        700,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": "={{$env.GOOGLE_SHEETS_SPREADSHEET_ID}}",
+        "sheetName": {
+          "__rl": true,
+          "value": "Production Board",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "job_id": "={{$json.job_id}}",
+            "part_name": "={{$json.part_name}}",
+            "customer": "={{$json.customer}}",
+            "machine_type": "={{$json.machine_type}}",
+            "priority": "={{$json.priority}}",
+            "eta_risk": "={{$json.eta_risk}}",
+            "due_date": "={{$json.due_date}}",
+            "qty": "={{$json.qty}}",
+            "status": "={{$json.alert_required ? 'needs_attention' : 'board_only'}}",
+            "classification_reason": "={{$json.classification_reason}}",
+            "last_seen_at": "={{$json.received_at}}"
+          },
+          "matchingColumns": [
+            "job_id"
+          ],
+          "schema": []
+        },
+        "options": {}
+      },
+      "id": "4dd6f020-170c-4d16-a3c8-a8ba3ee5c13c",
+      "name": "Google Sheets - Upsert Status Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1000,
+        20
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "__REPLACE_WITH_GOOGLE_SHEETS_CREDENTIAL_ID__",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{$json.eta_risk}}",
+              "rightValue": "late",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "leftValue": "={{$json.priority}}",
+              "rightValue": "high",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "32ffd140-7c95-4cf0-91bc-427f3dce240f",
+      "name": "IF - Late or High Priority",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1260,
+        20
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{$env.TELEGRAM_CHAT_ID}}",
+        "text": "=ForgeFlow ALERT: {{$json.job_id}} {{$json.part_name}} for {{$json.customer}} is {{$json.eta_risk}} / {{$json.priority}} priority on {{$json.machine_type}}. Due {{$json.due_date}}. {{$json.classification_reason}}",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "1b710e1c-3642-45e0-8f15-6d06895cb9fc",
+      "name": "Telegram - Production Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1520,
+        -80
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "__REPLACE_WITH_TELEGRAM_CREDENTIAL_ID__",
+          "name": "Telegram bot"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "d5e8c7a0-8a6f-431f-8079-4053d358f3a7",
+      "name": "Board Only",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1520,
+        120
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Demo Trigger": {
+      "main": [
+        [
+          {
+            "node": "Sample CSV Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook - CNC Job Intake": {
+      "main": [
+        [
+          {
+            "node": "Normalize Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample CSV Jobs": {
+      "main": [
+        [
+          {
+            "node": "Normalize Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Job": {
+      "main": [
+        [
+          {
+            "node": "Claude / Anthropic Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Claude / Anthropic Classifier": {
+      "main": [
+        [
+          {
+            "node": "Parse Classification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Classification": {
+      "main": [
+        [
+          {
+            "node": "Switch - Route by Machine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch - Route by Machine": {
+      "main": [
+        [
+          {
+            "node": "Milling Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Turning Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Laser Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "EDM Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Milling Work Center": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Upsert Status Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Turning Work Center": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Upsert Status Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Laser Work Center": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Upsert Status Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "EDM Work Center": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Upsert Status Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets - Upsert Status Row": {
+      "main": [
+        [
+          {
+            "node": "IF - Late or High Priority",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF - Late or High Priority": {
+      "main": [
+        [
+          {
+            "node": "Telegram - Production Alert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Board Only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "forgeflow"
+    },
+    {
+      "name": "cnc"
+    },
+    {
+      "name": "proof-asset"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2026-06-11T00:00:00.000Z",
+  "versionId": "a93256d8-19d7-4583-b92e-d9b9058ef12f"
+}
