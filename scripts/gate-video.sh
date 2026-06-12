@@ -16,16 +16,16 @@ fail() { echo "VIDEO GATE FAIL: $1" >&2; exit 1; }
 
 command -v ffprobe >/dev/null  || fail "ffprobe not available to validate the video"
 
-# 2) real video stream
-ct=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_type -of csv=p=0 "$MP4" 2>/dev/null || true)
+# 2) real video stream  (default=nokey avoids the csv trailing-comma trap)
+ct=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_type -of default=nokey=1:noprint_wrappers=1 "$MP4" 2>/dev/null | head -1 || true)
 [ "$ct" = "video" ] || fail "$MP4 has no video stream"
 
 # 3) resolution width >= 1280 (720p+)
-w=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of csv=p=0 "$MP4" 2>/dev/null || echo 0)
+w=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nokey=1:noprint_wrappers=1 "$MP4" 2>/dev/null | head -1 || echo 0)
 [ "${w:-0}" -ge 1280 ] || fail "video width ${w}px < 1280 (need 720p+, e.g. 1280x720 or 1920x1080)"
 
 # 4) duration between 25s and 120s
-dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$MP4" 2>/dev/null || echo 0)
+dur=$(ffprobe -v error -show_entries format=duration -of default=nokey=1:noprint_wrappers=1 "$MP4" 2>/dev/null | head -1 || echo 0)
 ok=$(awk -v d="$dur" 'BEGIN{ print (d>=25 && d<=120) ? "1" : "0" }')
 [ "$ok" = "1" ] || fail "video duration ${dur}s not in 25..120s window"
 

@@ -11,3 +11,4 @@ node_modules/
 
 # os
 .DS_Store
+video/data/

@@ -1,0 +1,17 @@
+{
+  "name": "forgeflow-demo-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "remotion render src/index.jsx ForgeFlowDemo ../media/forgeflow-demo.mp4 --codec=h264 --crf=17 --pixel-format=yuv420p --concurrency=50%"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.475",
+    "@remotion/compositor-linux-x64-gnu": "4.0.475",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.475"
+  },
+  "devDependencies": {}
+}
