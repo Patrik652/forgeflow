@@ -1,0 +1,87 @@
+{
+  "/home/pato/projects/personal/forgeflow/scripts/gate-video.sh": {
+    "mtime": 1781234809.5858908,
+    "ast_hash": "44e04bed10b76f50471d7b89eb6a2d3e",
+    "semantic_hash": "44e04bed10b76f50471d7b89eb6a2d3e"
+  },
+  "/home/pato/projects/personal/forgeflow/scripts/gate.sh": {
+    "mtime": 1781206081.4509685,
+    "ast_hash": "50fcac3f420616fd9212efff6d38097d",
+    "semantic_hash": "50fcac3f420616fd9212efff6d38097d"
+  },
+  "/home/pato/projects/personal/forgeflow/scripts/mock-run.sh": {
+    "mtime": 1781206667.4300418,
+    "ast_hash": "238a57c884d17b4d1c2276195944ef07",
+    "semantic_hash": "238a57c884d17b4d1c2276195944ef07"
+  },
+  "/home/pato/projects/personal/forgeflow/scripts/render-video.sh": {
+    "mtime": 1781210319.7380803,
+    "ast_hash": "96279b0b5a6bab9fa4f01cbb5f142708",
+    "semantic_hash": "96279b0b5a6bab9fa4f01cbb5f142708"
+  },
+  "/home/pato/projects/personal/forgeflow/scripts/validate.sh": {
+    "mtime": 1781206638.9770634,
+    "ast_hash": "852aa4844588efd4f5029c7eb29aa9db",
+    "semantic_hash": "852aa4844588efd4f5029c7eb29aa9db"
+  },
+  "/home/pato/projects/personal/forgeflow/video/data/mock-run.json": {
+    "mtime": 1781210682.9749236,
+    "ast_hash": "909c476cd142d6be8d1c5b674e63ae9d",
+    "semantic_hash": "909c476cd142d6be8d1c5b674e63ae9d"
+  },
+  "/home/pato/projects/personal/forgeflow/video/package.json": {
+    "mtime": 1781210647.1109734,
+    "ast_hash": "c4afed86ba3349a32f3e434ff90d4d50",
+    "semantic_hash": "c4afed86ba3349a32f3e434ff90d4d50"
+  },
+  "/home/pato/projects/personal/forgeflow/video/scripts/parse-mock-run.mjs": {
+    "mtime": 1781210319.7380803,
+    "ast_hash": "d9764ff125e44645b2b5806c7df2d2ee",
+    "semantic_hash": "d9764ff125e44645b2b5806c7df2d2ee"
+  },
+  "/home/pato/projects/personal/forgeflow/video/src/ForgeFlowDemo.jsx": {
+    "mtime": 1781210319.73708,
+    "ast_hash": "54530e4155dc307c37485e407c38a2d8",
+    "semantic_hash": "54530e4155dc307c37485e407c38a2d8"
+  },
+  "/home/pato/projects/personal/forgeflow/video/src/Root.jsx": {
+    "mtime": 1781210319.73708,
+    "ast_hash": "bbd39996c6d409543612136889deae56",
+    "semantic_hash": "bbd39996c6d409543612136889deae56"
+  },
+  "/home/pato/projects/personal/forgeflow/video/src/index.jsx": {
+    "mtime": 1781210319.73708,
+    "ast_hash": "397dcc1a17ccf72474cd990587b19e06",
+    "semantic_hash": "397dcc1a17ccf72474cd990587b19e06"
+  },
+  "/home/pato/projects/personal/forgeflow/workflows/forgeflow-job-tracker.json": {
+    "mtime": 1781206638.9780633,
+    "ast_hash": "1219c5e3e48e5cc7945c9200bfd65a9e",
+    "semantic_hash": "1219c5e3e48e5cc7945c9200bfd65a9e"
+  },
+  "/home/pato/projects/personal/forgeflow/README.md": {
+    "mtime": 1781206638.9770634,
+    "ast_hash": "97b0bd3e574d8eb82555719db87a5c3c",
+    "semantic_hash": "97b0bd3e574d8eb82555719db87a5c3c"
+  },
+  "/home/pato/projects/personal/forgeflow/docker-compose.yml": {
+    "mtime": 1781206638.9770634,
+    "ast_hash": "cca151b95f87e7fd085e4de4aacca1c3",
+    "semantic_hash": "cca151b95f87e7fd085e4de4aacca1c3"
+  },
+  "/home/pato/projects/personal/forgeflow/docs/plans/2026-06-11-forgeflow-demo-video.md": {
+    "mtime": 1781209879.7572176,
+    "ast_hash": "f61871c51057dfcf4c546a98e66320c6",
+    "semantic_hash": "f61871c51057dfcf4c546a98e66320c6"
+  },
+  "/home/pato/projects/personal/forgeflow/docs/plans/2026-06-11-forgeflow-design.md": {
+    "mtime": 1781206104.5560632,
+    "ast_hash": "2488232763f1b5c4f233f5a8284389e4",
+    "semantic_hash": "2488232763f1b5c4f233f5a8284389e4"
+  },
+  "/home/pato/projects/personal/forgeflow/video/data/mock-run.txt": {
+    "mtime": 1781210682.9519243,
+    "ast_hash": "8bbd105f5db465236a1ab1733e25b95d",
+    "semantic_hash": "8bbd105f5db465236a1ab1733e25b95d"
+  }
+}

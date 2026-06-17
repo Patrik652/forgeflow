@@ -1,0 +1,17 @@
+.plan/
+media/
+video/node_modules/
+video/out/
+video/dist/
+node_modules/
+.env
+.env.*
+*.log
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.svg

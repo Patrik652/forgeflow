@@ -1,0 +1,192 @@
+{
+  "communities": {
+    "0": [
+      "src_forgeflowdemo",
+      "src_forgeflowdemo_architecturescene",
+      "src_forgeflowdemo_clamp",
+      "src_forgeflowdemo_closescene",
+      "src_forgeflowdemo_forgeflowdemo",
+      "src_forgeflowdemo_kicker",
+      "src_forgeflowdemo_problemscene",
+      "src_forgeflowdemo_runscene",
+      "src_forgeflowdemo_scene",
+      "src_forgeflowdemo_scenes",
+      "src_forgeflowdemo_titlescene",
+      "src_index",
+      "src_root",
+      "src_root_remotionroot"
+    ],
+    "1": [
+      "scripts_parse_mock_run",
+      "scripts_parse_mock_run_alertjobs",
+      "scripts_parse_mock_run_expectedalerts",
+      "scripts_parse_mock_run_inputline",
+      "scripts_parse_mock_run_inputmatch",
+      "scripts_parse_mock_run_lines",
+      "scripts_parse_mock_run_payload",
+      "scripts_parse_mock_run_raw",
+      "scripts_parse_mock_run_rows"
+    ],
+    "2": [
+      "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_12_important_honesty_constraint",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_20_tool_choice_builder_decides",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_51_gate",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_57_out_of_scope",
+      "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_6_goal"
+    ],
+    "3": [
+      "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_15_solution_one_n8n_workflow",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_53_deterministic_gate",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni",
+      "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell"
+    ],
+    "4": [
+      "video_package",
+      "video_package_devdependencies",
+      "video_package_name",
+      "video_package_private",
+      "video_package_scripts",
+      "video_package_scripts_render",
+      "video_package_type",
+      "video_package_version"
+    ],
+    "5": [
+      "doc_readme_md",
+      "heading_readme_md_11_architecture",
+      "heading_readme_md_37_quickstart_run",
+      "heading_readme_md_5_problem",
+      "heading_readme_md_66_stack",
+      "heading_readme_md_75_demo_data",
+      "heading_readme_md_79_screenshot_placeholders"
+    ],
+    "6": [
+      "video_package_dependencies",
+      "video_package_dependencies_react",
+      "video_package_dependencies_react_dom",
+      "video_package_dependencies_remotion",
+      "video_package_dependencies_remotion_cli",
+      "video_package_dependencies_remotion_compositor_linux_x64_gnu"
+    ],
+    "7": [
+      "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "scripts_gate",
+      "scripts_gate_check_cat",
+      "scripts_gate_fail"
+    ],
+    "8": [
+      "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "scripts_gate_video",
+      "scripts_gate_video_fail"
+    ],
+    "9": [
+      "home_pato_projects_personal_forgeflow_scripts_mock_run_sh__entry",
+      "scripts_mock_run"
+    ],
+    "10": [
+      "home_pato_projects_personal_forgeflow_scripts_render_video_sh__entry",
+      "scripts_render_video"
+    ],
+    "11": [
+      "home_pato_projects_personal_forgeflow_scripts_validate_sh__entry",
+      "scripts_validate"
+    ],
+    "12": [
+      "doc_docker_compose_yml"
+    ],
+    "13": [
+      "doc_video_data_mock_run_txt"
+    ]
+  },
+  "cohesion": {
+    "0": 0.16483516483516483,
+    "1": 0.2222222222222222,
+    "2": 0.2857142857142857,
+    "3": 0.25,
+    "4": 0.25,
+    "5": 0.3333333333333333,
+    "6": 0.3333333333333333,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "label": "ForgeFlow — Demo / Presentation Video — Spec",
+      "degree": 9
+    },
+    {
+      "id": "doc_readme_md",
+      "label": "ForgeFlow CNC Production Job Tracker",
+      "degree": 8
+    },
+    {
+      "id": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "label": "ForgeFlow — CNC Production Job Tracker (n8n + Claude) — Design",
+      "degree": 7
+    },
+    {
+      "id": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "label": "gate.sh script",
+      "degree": 3
+    },
+    {
+      "id": "scripts_gate_fail",
+      "label": "fail()",
+      "degree": 3
+    },
+    {
+      "id": "scripts_gate_check_cat",
+      "label": "check_cat()",
+      "degree": 3
+    },
+    {
+      "id": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "label": "gate-video.sh script",
+      "degree": 2
+    },
+    {
+      "id": "scripts_gate_video_fail",
+      "label": "fail()",
+      "degree": 2
+    },
+    {
+      "id": "video_package_scripts",
+      "label": "scripts",
+      "degree": 2
+    },
+    {
+      "id": "src_forgeflowdemo_forgeflowdemo",
+      "label": "ForgeFlowDemo()",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Build Config` to `Build Config`?",
+      "why": "High betweenness centrality (0.019) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `mock-run.sh script`, `render-video.sh script`, `validate.sh script` to the rest of the system?",
+      "why": "44 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -1,0 +1,1696 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "gate-video.sh",
+      "file_type": "code",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_gate_video",
+      "community": 8,
+      "community_name": "Scripts",
+      "norm_label": "gate-video.sh"
+    },
+    {
+      "label": "gate-video.sh script",
+      "file_type": "code",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "community": 8,
+      "community_name": "Scripts",
+      "norm_label": "gate-video.sh script"
+    },
+    {
+      "label": "fail()",
+      "file_type": "code",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L10",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_gate_video_fail",
+      "community": 8,
+      "community_name": "Scripts",
+      "norm_label": "fail()"
+    },
+    {
+      "label": "gate.sh",
+      "file_type": "code",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_gate",
+      "community": 7,
+      "community_name": "Scripts",
+      "norm_label": "gate.sh"
+    },
+    {
+      "label": "gate.sh script",
+      "file_type": "code",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "community": 7,
+      "community_name": "Scripts",
+      "norm_label": "gate.sh script"
+    },
+    {
+      "label": "fail()",
+      "file_type": "code",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L11",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_gate_fail",
+      "community": 7,
+      "community_name": "Scripts",
+      "norm_label": "fail()"
+    },
+    {
+      "label": "check_cat()",
+      "file_type": "code",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L22",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "scripts_gate_check_cat",
+      "community": 7,
+      "community_name": "Scripts",
+      "norm_label": "check_cat()"
+    },
+    {
+      "label": "mock-run.sh",
+      "file_type": "code",
+      "source_file": "scripts/mock-run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_mock_run",
+      "community": 9,
+      "community_name": "Scripts",
+      "norm_label": "mock-run.sh"
+    },
+    {
+      "label": "mock-run.sh script",
+      "file_type": "code",
+      "source_file": "scripts/mock-run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_projects_personal_forgeflow_scripts_mock_run_sh__entry",
+      "community": 9,
+      "community_name": "Scripts",
+      "norm_label": "mock-run.sh script"
+    },
+    {
+      "label": "render-video.sh",
+      "file_type": "code",
+      "source_file": "scripts/render-video.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_render_video",
+      "community": 10,
+      "community_name": "Scripts",
+      "norm_label": "render-video.sh"
+    },
+    {
+      "label": "render-video.sh script",
+      "file_type": "code",
+      "source_file": "scripts/render-video.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_projects_personal_forgeflow_scripts_render_video_sh__entry",
+      "community": 10,
+      "community_name": "Scripts",
+      "norm_label": "render-video.sh script"
+    },
+    {
+      "label": "validate.sh",
+      "file_type": "code",
+      "source_file": "scripts/validate.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_validate",
+      "community": 11,
+      "community_name": "Scripts",
+      "norm_label": "validate.sh"
+    },
+    {
+      "label": "validate.sh script",
+      "file_type": "code",
+      "source_file": "scripts/validate.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_projects_personal_forgeflow_scripts_validate_sh__entry",
+      "community": 11,
+      "community_name": "Scripts",
+      "norm_label": "validate.sh script"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "video_package",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "video_package_name",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "video_package_version",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "video_package_private",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "private"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "video_package_type",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "video_package_scripts",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "scripts"
+    },
+    {
+      "label": "render",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "video_package_scripts_render",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "render"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "video_package_dependencies",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@remotion/cli",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "video_package_dependencies_remotion_cli",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "@remotion/cli"
+    },
+    {
+      "label": "@remotion/compositor-linux-x64-gnu",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "video_package_dependencies_remotion_compositor_linux_x64_gnu",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "@remotion/compositor-linux-x64-gnu"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "video_package_dependencies_react",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "video_package_dependencies_react_dom",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "remotion",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "video_package_dependencies_remotion",
+      "community": 6,
+      "community_name": "Build Config",
+      "norm_label": "remotion"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "video/package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "video_package_devdependencies",
+      "community": 4,
+      "community_name": "Build Config",
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "parse-mock-run.mjs",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "parse-mock-run.mjs"
+    },
+    {
+      "label": "raw",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_raw",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "raw"
+    },
+    {
+      "label": "lines",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_lines",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "lines"
+    },
+    {
+      "label": "inputLine",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_inputline",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "inputline"
+    },
+    {
+      "label": "inputMatch",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_inputmatch",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "inputmatch"
+    },
+    {
+      "label": "rows",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_rows",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "rows"
+    },
+    {
+      "label": "alertJobs",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_alertjobs",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "alertjobs"
+    },
+    {
+      "label": "expectedAlerts",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_expectedalerts",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "expectedalerts"
+    },
+    {
+      "label": "payload",
+      "file_type": "code",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_parse_mock_run_payload",
+      "community": 1,
+      "community_name": "Scripts",
+      "norm_label": "payload"
+    },
+    {
+      "label": "ForgeFlowDemo.jsx",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "forgeflowdemo.jsx"
+    },
+    {
+      "label": "clamp",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_clamp",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "clamp"
+    },
+    {
+      "label": "scenes",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_scenes",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "scenes"
+    },
+    {
+      "label": "Scene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_scene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "scene()"
+    },
+    {
+      "label": "Kicker()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_kicker",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "kicker()"
+    },
+    {
+      "label": "TitleScene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_titlescene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "titlescene()"
+    },
+    {
+      "label": "ProblemScene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_problemscene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "problemscene()"
+    },
+    {
+      "label": "ArchitectureScene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_architecturescene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "architecturescene()"
+    },
+    {
+      "label": "RunScene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_runscene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "runscene()"
+    },
+    {
+      "label": "CloseScene()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_closescene",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "closescene()"
+    },
+    {
+      "label": "ForgeFlowDemo()",
+      "file_type": "code",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "src_forgeflowdemo_forgeflowdemo",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "forgeflowdemo()"
+    },
+    {
+      "label": "Root.jsx",
+      "file_type": "code",
+      "source_file": "video/src/Root.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_root",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "root.jsx"
+    },
+    {
+      "label": "RemotionRoot()",
+      "file_type": "code",
+      "source_file": "video/src/Root.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_root_remotionroot",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "remotionroot()"
+    },
+    {
+      "label": "index.jsx",
+      "file_type": "code",
+      "source_file": "video/src/index.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_index",
+      "community": 0,
+      "community_name": "Video",
+      "norm_label": "index.jsx"
+    },
+    {
+      "label": "ForgeFlow CNC Production Job Tracker",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "file",
+        "language": "markdown"
+      },
+      "_origin": "deterministic_doc",
+      "id": "doc_readme_md",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "forgeflow cnc production job tracker"
+    },
+    {
+      "label": "Problem",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_5_problem",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "problem"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_11_architecture",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "architecture"
+    },
+    {
+      "label": "Quickstart / Run",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_37_quickstart_run",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "quickstart / run"
+    },
+    {
+      "label": "Stack",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_66_stack",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "stack"
+    },
+    {
+      "label": "Demo Data",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L75",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_75_demo_data",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "demo data"
+    },
+    {
+      "label": "Screenshot Placeholders",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_readme_md_79_screenshot_placeholders",
+      "community": 5,
+      "community_name": "Project Docs",
+      "norm_label": "screenshot placeholders"
+    },
+    {
+      "label": "docker-compose.yml",
+      "file_type": "document",
+      "source_file": "docker-compose.yml",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "file",
+        "language": "text"
+      },
+      "_origin": "deterministic_doc",
+      "id": "doc_docker_compose_yml",
+      "community": 12,
+      "community_name": "Docker Compose.Yml",
+      "norm_label": "docker-compose.yml"
+    },
+    {
+      "label": "ForgeFlow \u2014 Demo / Presentation Video \u2014 Spec",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "file",
+        "language": "markdown"
+      },
+      "_origin": "deterministic_doc",
+      "id": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "forgeflow \u2014 demo / presentation video \u2014 spec"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L6",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_6_goal",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "goal"
+    },
+    {
+      "label": "Important honesty constraint",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L12",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_12_important_honesty_constraint",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "important honesty constraint"
+    },
+    {
+      "label": "Tool choice \u2014 builder decides",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L20",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_20_tool_choice_builder_decides",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "tool choice \u2014 builder decides"
+    },
+    {
+      "label": "Storyboard target 60s",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L30",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "storyboard target 60s"
+    },
+    {
+      "label": "Deliverables Codex builds",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L43",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "deliverables codex builds"
+    },
+    {
+      "label": "Gate",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L51",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_51_gate",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "gate"
+    },
+    {
+      "label": "Out of scope",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L57",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_57_out_of_scope",
+      "community": 2,
+      "community_name": "Tests",
+      "norm_label": "out of scope"
+    },
+    {
+      "label": "ForgeFlow \u2014 CNC Production Job Tracker (n8n + Claude) \u2014 Design",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "file",
+        "language": "markdown"
+      },
+      "_origin": "deterministic_doc",
+      "id": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "forgeflow \u2014 cnc production job tracker (n8n + claude) \u2014 design"
+    },
+    {
+      "label": "ForgeFlow \u2014 CNC Production Job Tracker n8n + Claude \u2014 Design",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "heading",
+        "level": 1
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "forgeflow \u2014 cnc production job tracker n8n + claude \u2014 design"
+    },
+    {
+      "label": "Problem the story we sell",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L9",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "problem the story we sell"
+    },
+    {
+      "label": "Solution \u2014 one n8n workflow",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L15",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_15_solution_one_n8n_workflow",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "solution \u2014 one n8n workflow"
+    },
+    {
+      "label": "Components / deliverables Codex builds",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L31",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "components / deliverables codex builds"
+    },
+    {
+      "label": "Mock-run contract so the gate is meaningful",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L43",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "mock-run contract so the gate is meaningful"
+    },
+    {
+      "label": "Deterministic gate",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L53",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_53_deterministic_gate",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "deterministic gate"
+    },
+    {
+      "label": "Out of scope YAGNI",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L60",
+      "metadata": {
+        "kind": "heading",
+        "level": 2
+      },
+      "_origin": "deterministic_doc",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni",
+      "community": 3,
+      "community_name": "n8n Workflow",
+      "norm_label": "out of scope yagni"
+    },
+    {
+      "label": "mock-run.txt",
+      "file_type": "document",
+      "source_file": "video/data/mock-run.txt",
+      "source_location": "L1",
+      "metadata": {
+        "kind": "file",
+        "language": "text"
+      },
+      "_origin": "deterministic_doc",
+      "id": "doc_video_data_mock_run_txt",
+      "community": 13,
+      "community_name": "Video",
+      "norm_label": "mock-run.txt"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_gate_video",
+      "target": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_gate_video",
+      "target": "scripts_gate_video_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate-video.sh",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "target": "scripts_gate_video_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_gate",
+      "target": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_gate",
+      "target": "scripts_gate_check_cat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_gate",
+      "target": "scripts_gate_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "target": "scripts_gate_check_cat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "target": "scripts_gate_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/gate.sh",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "call",
+      "source": "scripts_gate_check_cat",
+      "target": "scripts_gate_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mock-run.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_mock_run",
+      "target": "home_pato_projects_personal_forgeflow_scripts_mock_run_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/render-video.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_render_video",
+      "target": "home_pato_projects_personal_forgeflow_scripts_render_video_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/validate.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_validate",
+      "target": "home_pato_projects_personal_forgeflow_scripts_validate_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "video_package",
+      "target": "video_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "video_package_scripts",
+      "target": "video_package_scripts_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "video_package_dependencies",
+      "target": "video_package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "video_package_dependencies",
+      "target": "video_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "video_package_dependencies",
+      "target": "video_package_dependencies_remotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "video_package_dependencies",
+      "target": "video_package_dependencies_remotion_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "video_package_dependencies",
+      "target": "video_package_dependencies_remotion_compositor_linux_x64_gnu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_alertjobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_expectedalerts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_inputline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_inputmatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/scripts/parse-mock-run.mjs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_parse_mock_run",
+      "target": "scripts_parse_mock_run_rows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_architecturescene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_closescene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_forgeflowdemo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_kicker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_problemscene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_runscene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_scene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_scenes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/ForgeFlowDemo.jsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_forgeflowdemo",
+      "target": "src_forgeflowdemo_titlescene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/Root.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_root",
+      "target": "src_forgeflowdemo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/Root.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_root",
+      "target": "src_forgeflowdemo_forgeflowdemo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/index.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/Root.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_root",
+      "target": "src_root_remotionroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "video/src/index.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_index",
+      "target": "src_root_remotionroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L11",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_11_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "source": "doc_readme_md",
+      "target": "doc_readme_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L37",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_37_quickstart_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_5_problem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L66",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_66_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L75",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_75_demo_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L79",
+      "source": "doc_readme_md",
+      "target": "heading_readme_md_79_screenshot_placeholders"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L12",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_12_important_honesty_constraint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L20",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_20_tool_choice_builder_decides"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L30",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L43",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L51",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_51_gate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L57",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_57_out_of_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L6",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_6_goal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L15",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_15_solution_one_n8n_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L31",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L43",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L53",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_53_deterministic_gate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L60",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L9",
+      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "f29dea03f730895f7039bb684ed08bf2cd27dabd"
+}
