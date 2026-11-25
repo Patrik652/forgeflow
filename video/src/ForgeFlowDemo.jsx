@@ -204,11 +204,11 @@ const CloseScene = () => {
         SYNAPTIC FORGE
       </div>
       <h2>Rules first. AI optional.</h2>
-      <p>Anthropic / Sheets / Telegram: disabled integration template.</p>
+      <p>Get the code and run the demo.</p>
       <div className="cta-row">
-        <span>Local synthetic demo</span>
-        <span>External integrations unverified</span>
-        <span>No live or client deployment shown</span>
+        <span>github.com/Patrik652/forgeflow</span>
+        <span>Synthetic demo · no external delivery</span>
+        <span>Provider template disabled</span>
       </div>
     </Scene>
   );
