@@ -79,7 +79,11 @@ function makeWorkflow(integration = false) {
   const noAlert = node('Board Only', 'n8n-nodes-base.noOp', {}, routeX + 1220, 180);
   connect(condition, alerts, 0); connect(condition, noAlert, 1);
   if (integration) {
-    const telegram = node('Optional Telegram Alert', 'n8n-nodes-base.telegram', { chatId: 'REPLACE_WITH_CHAT_ID', text: '={{$json.alert_text}}', additionalFields: {} }, routeX + 1460, -100, { typeVersion: 1.2, disabled: true, notes: 'Optional, unverified external send. Owner must configure Telegram credentials/chat ID and enable this node deliberately. Plain text avoids untrusted Markdown parsing.' });
+    const telegram = node('Optional Telegram Alert', 'n8n-nodes-base.telegram', {
+      chatId: 'REPLACE_WITH_CHAT_ID',
+      text: "={{$json.alert_text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}}",
+      additionalFields: { parse_mode: 'HTML', appendAttribution: false },
+    }, routeX + 1460, -100, { typeVersion: 1.2, disabled: true, notes: 'Optional, unverified external send. Owner must configure Telegram credentials/chat ID and enable this node deliberately. HTML-escaped alert content renders as plain text; untrusted notes cannot inject markup.' });
     connect(alerts, telegram);
   }
   return {

@@ -526,8 +526,11 @@
     {
       "parameters": {
         "chatId": "REPLACE_WITH_CHAT_ID",
-        "text": "={{$json.alert_text}}",
-        "additionalFields": {}
+        "text": "={{$json.alert_text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}}",
+        "additionalFields": {
+          "parse_mode": "HTML",
+          "appendAttribution": false
+        }
       },
       "id": "optional-telegram-alert",
       "name": "Optional Telegram Alert",
@@ -538,7 +541,7 @@
         -100
       ],
       "disabled": true,
-      "notes": "Optional, unverified external send. Owner must configure Telegram credentials/chat ID and enable this node deliberately. Plain text avoids untrusted Markdown parsing."
+      "notes": "Optional, unverified external send. Owner must configure Telegram credentials/chat ID and enable this node deliberately. HTML-escaped alert content renders as plain text; untrusted notes cannot inject markup."
     }
   ],
   "connections": {

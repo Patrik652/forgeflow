@@ -80,3 +80,12 @@ test('provider content cannot replace authoritative route or discard original jo
   assert.equal(restored[0].json.alert_required, false);
   assert.equal(restored[0].json.provider_explanation, '{"priority":"high","route":"EDM"}');
 });
+
+test('Telegram renders untrusted alert content as escaped text', () => {
+  const telegram = integration.nodes.find((node) => node.type.endsWith('.telegram'));
+  const expression = telegram.parameters.text.slice(3, -2);
+  const output = vm.runInNewContext(expression, { $json: { alert_text: 'Job <b>unsafe</b> & R&D _part_[x](url)' } });
+  assert.equal(output, 'Job &lt;b&gt;unsafe&lt;/b&gt; &amp; R&amp;D _part_[x](url)');
+  assert.equal(telegram.parameters.additionalFields.parse_mode, 'HTML');
+  assert.equal(telegram.parameters.additionalFields.appendAttribution, false);
+});
