@@ -83,5 +83,145 @@
     "mtime": 1781210682.9519243,
     "ast_hash": "8bbd105f5db465236a1ab1733e25b95d",
     "semantic_hash": "8bbd105f5db465236a1ab1733e25b95d"
+  },
+  "scripts/build-workflows.mjs": {
+    "mtime": 1795617428.9735634,
+    "ast_hash": "8cfeb150fc6498028b2e21f59a949b8a",
+    "semantic_hash": ""
+  },
+  "scripts/gate-video.sh": {
+    "mtime": 1795616579.2376564,
+    "ast_hash": "44e04bed10b76f50471d7b89eb6a2d3e",
+    "semantic_hash": ""
+  },
+  "scripts/gate.sh": {
+    "mtime": 1795616579.238324,
+    "ast_hash": "50fcac3f420616fd9212efff6d38097d",
+    "semantic_hash": ""
+  },
+  "scripts/mock-run.sh": {
+    "mtime": 1795616999.8245425,
+    "ast_hash": "3a3e29a67e00b4542b005a442e6ccfa6",
+    "semantic_hash": ""
+  },
+  "scripts/n8n-smoke.py": {
+    "mtime": 1795617277.1994586,
+    "ast_hash": "e984c8863918a8bd74aed47edf82b471",
+    "semantic_hash": ""
+  },
+  "scripts/read-csv.py": {
+    "mtime": 1795616999.7109957,
+    "ast_hash": "bfefeffac67a449bc64335ca52cf09e7",
+    "semantic_hash": ""
+  },
+  "scripts/render-video.sh": {
+    "mtime": 1795617388.1413147,
+    "ast_hash": "8bac6c9e3592caee805221ef86071903",
+    "semantic_hash": ""
+  },
+  "scripts/run-jobs.mjs": {
+    "mtime": 1795616999.7109957,
+    "ast_hash": "fafec67441c70988d94d55f02180b115",
+    "semantic_hash": ""
+  },
+  "scripts/validate.sh": {
+    "mtime": 1795616579.2386563,
+    "ast_hash": "852aa4844588efd4f5029c7eb29aa9db",
+    "semantic_hash": ""
+  },
+  "scripts/verify.sh": {
+    "mtime": 1795617160.3449426,
+    "ast_hash": "1f78412da358ffe66997fb15d6edaf2c",
+    "semantic_hash": ""
+  },
+  "src/job-engine.mjs": {
+    "mtime": 1795616999.7109957,
+    "ast_hash": "e46e11d18804da2ee048d1a0de27db87",
+    "semantic_hash": ""
+  },
+  "tests/test-cli.mjs": {
+    "mtime": 1795616713.1543725,
+    "ast_hash": "cc5e3e1881ee72b47151b0fbebe1f62f",
+    "semantic_hash": ""
+  },
+  "tests/test-engine.mjs": {
+    "mtime": 1795616713.1543725,
+    "ast_hash": "2e4adc26f22970c50bec0fab3b6a7e73",
+    "semantic_hash": ""
+  },
+  "tests/test-video-parser.mjs": {
+    "mtime": 1795617360.4881468,
+    "ast_hash": "8d514d10fde78de0eab1af2670435c35",
+    "semantic_hash": ""
+  },
+  "tests/test-workflows.mjs": {
+    "mtime": 1795617417.5044935,
+    "ast_hash": "c1560f17ef5b0301d0b5b1e790d6fd9c",
+    "semantic_hash": ""
+  },
+  "video/data/mock-run-output.json": {
+    "mtime": 1795617401.2633946,
+    "ast_hash": "3bcdd0ae7bc488b67c62ecd7ee84e260",
+    "semantic_hash": ""
+  },
+  "video/data/mock-run.json": {
+    "mtime": 1795617401.2953947,
+    "ast_hash": "b936080774cf8ff0725120b624039139",
+    "semantic_hash": ""
+  },
+  "video/package.json": {
+    "mtime": 1795616579.2396564,
+    "ast_hash": "c4afed86ba3349a32f3e434ff90d4d50",
+    "semantic_hash": ""
+  },
+  "video/scripts/parse-mock-run.mjs": {
+    "mtime": 1795617365.9011796,
+    "ast_hash": "8e7527ee5986fb3970490212c2a42117",
+    "semantic_hash": ""
+  },
+  "video/src/ForgeFlowDemo.jsx": {
+    "mtime": 1795617388.1423147,
+    "ast_hash": "3d64dd74b95cc1a2f5246e7c5a1b313b",
+    "semantic_hash": ""
+  },
+  "video/src/Root.jsx": {
+    "mtime": 1795616579.2406564,
+    "ast_hash": "bbd39996c6d409543612136889deae56",
+    "semantic_hash": ""
+  },
+  "video/src/index.jsx": {
+    "mtime": 1795616579.2406564,
+    "ast_hash": "397dcc1a17ccf72474cd990587b19e06",
+    "semantic_hash": ""
+  },
+  "workflows/forgeflow-demo.json": {
+    "mtime": 1795617429.3145654,
+    "ast_hash": "28bcf6e48c3b5e55f66bc1c8146c0ad2",
+    "semantic_hash": ""
+  },
+  "workflows/forgeflow-job-tracker.json": {
+    "mtime": 1795617429.3155656,
+    "ast_hash": "21e4945d627c2bcfb1bf1d64d8deb604",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1795617721.5463622,
+    "ast_hash": "a9423bc3c546ee3d5a603fbe5fd2751b",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1795617054.1333141,
+    "ast_hash": "bd2d1ee2f0487402a9970c124f05ed49",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-06-11-forgeflow-demo-video.md": {
+    "mtime": 1795617590.8585556,
+    "ast_hash": "1d0ff947df0ecd5d22e0407566ea6201",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-06-11-forgeflow-design.md": {
+    "mtime": 1795617583.288509,
+    "ast_hash": "94cdcff5c3c300289574af9908efea8c",
+    "semantic_hash": ""
   }
 }

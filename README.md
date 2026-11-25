@@ -6,6 +6,8 @@ Turn a CSV of production jobs into a work-centre board and a short list of excep
 
 [Watch the 60-second demo](media/forgeflow-demo.mp4)
 
+![Actual synthetic demo output: eight jobs, two alert previews, reference date 2026-06-11](media/forgeflow-preview.jpg)
+
 ## Problem
 
 A production planner needs to see which jobs belong to each work centre and which need attention. Scattered spreadsheets and free-text notes make that difficult.

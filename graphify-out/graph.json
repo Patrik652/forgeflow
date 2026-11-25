@@ -4,6 +4,86 @@
   "graph": {},
   "nodes": [
     {
+      "label": "build-workflows.mjs",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_build_workflows",
+      "community": 15,
+      "norm_label": "build-workflows.mjs"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_root",
+      "community": 15,
+      "norm_label": "root"
+    },
+    {
+      "label": "engine",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_engine",
+      "community": 15,
+      "norm_label": "engine"
+    },
+    {
+      "label": "parsed",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_parsed",
+      "community": 15,
+      "norm_label": "parsed"
+    },
+    {
+      "label": "samples",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_samples",
+      "community": 15,
+      "norm_label": "samples"
+    },
+    {
+      "label": "slug()",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_slug",
+      "community": 15,
+      "norm_label": "slug()"
+    },
+    {
+      "label": "makeWorkflow()",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_makeworkflow",
+      "community": 15,
+      "norm_label": "makeworkflow()"
+    },
+    {
+      "label": "artifacts",
+      "file_type": "code",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "scripts_build_workflows_artifacts",
+      "community": 15,
+      "norm_label": "artifacts"
+    },
+    {
       "label": "gate-video.sh",
       "file_type": "code",
       "source_file": "scripts/gate-video.sh",
@@ -15,7 +95,6 @@
       "_origin": "ast",
       "id": "scripts_gate_video",
       "community": 8,
-      "community_name": "Scripts",
       "norm_label": "gate-video.sh"
     },
     {
@@ -28,9 +107,8 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_video_sh__entry",
       "community": 8,
-      "community_name": "Scripts",
       "norm_label": "gate-video.sh script"
     },
     {
@@ -45,7 +123,6 @@
       "_origin": "ast",
       "id": "scripts_gate_video_fail",
       "community": 8,
-      "community_name": "Scripts",
       "norm_label": "fail()"
     },
     {
@@ -60,7 +137,6 @@
       "_origin": "ast",
       "id": "scripts_gate",
       "community": 7,
-      "community_name": "Scripts",
       "norm_label": "gate.sh"
     },
     {
@@ -73,9 +149,8 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_sh__entry",
       "community": 7,
-      "community_name": "Scripts",
       "norm_label": "gate.sh script"
     },
     {
@@ -90,7 +165,6 @@
       "_origin": "ast",
       "id": "scripts_gate_fail",
       "community": 7,
-      "community_name": "Scripts",
       "norm_label": "fail()"
     },
     {
@@ -105,7 +179,6 @@
       "_origin": "ast",
       "id": "scripts_gate_check_cat",
       "community": 7,
-      "community_name": "Scripts",
       "norm_label": "check_cat()"
     },
     {
@@ -120,7 +193,6 @@
       "_origin": "ast",
       "id": "scripts_mock_run",
       "community": 9,
-      "community_name": "Scripts",
       "norm_label": "mock-run.sh"
     },
     {
@@ -133,10 +205,133 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_pato_projects_personal_forgeflow_scripts_mock_run_sh__entry",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_mock_run_sh__entry",
       "community": 9,
-      "community_name": "Scripts",
       "norm_label": "mock-run.sh script"
+    },
+    {
+      "label": "FORGEFLOW_TODAY",
+      "file_type": "code",
+      "source_file": "scripts/mock-run.sh",
+      "source_location": "L24",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "scripts_mock_run_forgeflow_today",
+      "community": 9,
+      "norm_label": "forgeflow_today"
+    },
+    {
+      "label": "n8n-smoke.py",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke",
+      "community": 14,
+      "norm_label": "n8n-smoke.py"
+    },
+    {
+      "label": "command()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_command",
+      "community": 14,
+      "norm_label": "command()"
+    },
+    {
+      "label": "decode_execution()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_decode_execution",
+      "community": 14,
+      "norm_label": "decode_execution()"
+    },
+    {
+      "label": "output_items()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_output_items",
+      "community": 14,
+      "norm_label": "output_items()"
+    },
+    {
+      "label": "expected_jobs()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_expected_jobs",
+      "community": 14,
+      "norm_label": "expected_jobs()"
+    },
+    {
+      "label": "assert_results()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_assert_results",
+      "community": 14,
+      "norm_label": "assert_results()"
+    },
+    {
+      "label": "run_case()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_run_case",
+      "community": 14,
+      "norm_label": "run_case()"
+    },
+    {
+      "label": "provider_boundary()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_provider_boundary",
+      "community": 14,
+      "norm_label": "provider_boundary()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "scripts_n8n_smoke_main",
+      "community": 14,
+      "norm_label": "main()"
+    },
+    {
+      "label": "read-csv.py",
+      "file_type": "code",
+      "source_file": "scripts/read-csv.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_read_csv",
+      "community": 18,
+      "norm_label": "read-csv.py"
+    },
+    {
+      "label": "read_jobs()",
+      "file_type": "code",
+      "source_file": "scripts/read-csv.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "scripts_read_csv_read_jobs",
+      "community": 18,
+      "norm_label": "read_jobs()"
     },
     {
       "label": "render-video.sh",
@@ -150,7 +345,6 @@
       "_origin": "ast",
       "id": "scripts_render_video",
       "community": 10,
-      "community_name": "Scripts",
       "norm_label": "render-video.sh"
     },
     {
@@ -163,10 +357,33 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_pato_projects_personal_forgeflow_scripts_render_video_sh__entry",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_render_video_sh__entry",
       "community": 10,
-      "community_name": "Scripts",
       "norm_label": "render-video.sh script"
+    },
+    {
+      "label": "FORGEFLOW_TODAY",
+      "file_type": "code",
+      "source_file": "scripts/render-video.sh",
+      "source_location": "L10",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "scripts_render_video_forgeflow_today",
+      "community": 10,
+      "norm_label": "forgeflow_today"
+    },
+    {
+      "label": "run-jobs.mjs",
+      "file_type": "code",
+      "source_file": "scripts/run-jobs.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_run_jobs",
+      "community": 6,
+      "norm_label": "run-jobs.mjs"
     },
     {
       "label": "validate.sh",
@@ -180,7 +397,6 @@
       "_origin": "ast",
       "id": "scripts_validate",
       "community": 11,
-      "community_name": "Scripts",
       "norm_label": "validate.sh"
     },
     {
@@ -193,10 +409,237 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_pato_projects_personal_forgeflow_scripts_validate_sh__entry",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_validate_sh__entry",
       "community": 11,
-      "community_name": "Scripts",
       "norm_label": "validate.sh script"
+    },
+    {
+      "label": "verify.sh",
+      "file_type": "code",
+      "source_file": "scripts/verify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_verify",
+      "community": 17,
+      "norm_label": "verify.sh"
+    },
+    {
+      "label": "verify.sh script",
+      "file_type": "code",
+      "source_file": "scripts/verify.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_verify_sh__entry",
+      "community": 17,
+      "norm_label": "verify.sh script"
+    },
+    {
+      "label": "job-engine.mjs",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_job_engine",
+      "community": 6,
+      "norm_label": "job-engine.mjs"
+    },
+    {
+      "label": "text()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_job_engine_text",
+      "community": 6,
+      "norm_label": "text()"
+    },
+    {
+      "label": "calendarDate()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_job_engine_calendardate",
+      "community": 6,
+      "norm_label": "calendardate()"
+    },
+    {
+      "label": "quantity()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "src_job_engine_quantity",
+      "community": 6,
+      "norm_label": "quantity()"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_job_engine_normalize",
+      "community": 6,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "processJob()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "src_job_engine_processjob",
+      "community": 6,
+      "norm_label": "processjob()"
+    },
+    {
+      "label": "processJobs()",
+      "file_type": "code",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "src_job_engine_processjobs",
+      "community": 6,
+      "norm_label": "processjobs()"
+    },
+    {
+      "label": "test-cli.mjs",
+      "file_type": "code",
+      "source_file": "tests/test-cli.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_cli",
+      "community": 19,
+      "norm_label": "test-cli.mjs"
+    },
+    {
+      "label": "runCsv()",
+      "file_type": "code",
+      "source_file": "tests/test-cli.mjs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tests_test_cli_runcsv",
+      "community": 19,
+      "norm_label": "runcsv()"
+    },
+    {
+      "label": "test-engine.mjs",
+      "file_type": "code",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_engine",
+      "community": 6,
+      "norm_label": "test-engine.mjs"
+    },
+    {
+      "label": "base",
+      "file_type": "code",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tests_test_engine_base",
+      "community": 6,
+      "norm_label": "base"
+    },
+    {
+      "label": "clock",
+      "file_type": "code",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tests_test_engine_clock",
+      "community": 6,
+      "norm_label": "clock"
+    },
+    {
+      "label": "test-video-parser.mjs",
+      "file_type": "code",
+      "source_file": "tests/test-video-parser.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_video_parser",
+      "community": 20,
+      "norm_label": "test-video-parser.mjs"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "tests/test-video-parser.mjs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tests_test_video_parser_root",
+      "community": 20,
+      "norm_label": "root"
+    },
+    {
+      "label": "test-workflows.mjs",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_workflows",
+      "community": 16,
+      "norm_label": "test-workflows.mjs"
+    },
+    {
+      "label": "read()",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tests_test_workflows_read",
+      "community": 16,
+      "norm_label": "read()"
+    },
+    {
+      "label": "integration",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tests_test_workflows_integration",
+      "community": 16,
+      "norm_label": "integration"
+    },
+    {
+      "label": "providerTypes",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tests_test_workflows_providertypes",
+      "community": 16,
+      "norm_label": "providertypes"
+    },
+    {
+      "label": "find()",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tests_test_workflows_find",
+      "community": 16,
+      "norm_label": "find()"
+    },
+    {
+      "label": "runCode()",
+      "file_type": "code",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tests_test_workflows_runcode",
+      "community": 16,
+      "norm_label": "runcode()"
     },
     {
       "label": "package.json",
@@ -206,7 +649,6 @@
       "_origin": "ast",
       "id": "video_package",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "package.json"
     },
     {
@@ -217,7 +659,6 @@
       "_origin": "ast",
       "id": "video_package_name",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "name"
     },
     {
@@ -228,7 +669,6 @@
       "_origin": "ast",
       "id": "video_package_version",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "version"
     },
     {
@@ -239,7 +679,6 @@
       "_origin": "ast",
       "id": "video_package_private",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "private"
     },
     {
@@ -250,7 +689,6 @@
       "_origin": "ast",
       "id": "video_package_type",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "type"
     },
     {
@@ -261,7 +699,6 @@
       "_origin": "ast",
       "id": "video_package_scripts",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "scripts"
     },
     {
@@ -272,7 +709,6 @@
       "_origin": "ast",
       "id": "video_package_scripts_render",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "render"
     },
     {
@@ -282,8 +718,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "video_package_dependencies",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "dependencies"
     },
     {
@@ -293,8 +728,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "video_package_dependencies_remotion_cli",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "@remotion/cli"
     },
     {
@@ -304,8 +738,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "video_package_dependencies_remotion_compositor_linux_x64_gnu",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "@remotion/compositor-linux-x64-gnu"
     },
     {
@@ -315,8 +748,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "video_package_dependencies_react",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "react"
     },
     {
@@ -326,8 +758,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "video_package_dependencies_react_dom",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "react-dom"
     },
     {
@@ -337,8 +768,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "video_package_dependencies_remotion",
-      "community": 6,
-      "community_name": "Build Config",
+      "community": 4,
       "norm_label": "remotion"
     },
     {
@@ -349,7 +779,6 @@
       "_origin": "ast",
       "id": "video_package_devdependencies",
       "community": 4,
-      "community_name": "Build Config",
       "norm_label": "devdependencies"
     },
     {
@@ -360,7 +789,6 @@
       "_origin": "ast",
       "id": "scripts_parse_mock_run",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "parse-mock-run.mjs"
     },
     {
@@ -371,84 +799,56 @@
       "_origin": "ast",
       "id": "scripts_parse_mock_run_raw",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "raw"
     },
     {
-      "label": "lines",
+      "label": "jobs",
       "file_type": "code",
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "scripts_parse_mock_run_lines",
+      "id": "scripts_parse_mock_run_jobs",
       "community": 1,
-      "community_name": "Scripts",
-      "norm_label": "lines"
-    },
-    {
-      "label": "inputLine",
-      "file_type": "code",
-      "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "scripts_parse_mock_run_inputline",
-      "community": 1,
-      "community_name": "Scripts",
-      "norm_label": "inputline"
-    },
-    {
-      "label": "inputMatch",
-      "file_type": "code",
-      "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "scripts_parse_mock_run_inputmatch",
-      "community": 1,
-      "community_name": "Scripts",
-      "norm_label": "inputmatch"
+      "norm_label": "jobs"
     },
     {
       "label": "rows",
       "file_type": "code",
       "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L17",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "scripts_parse_mock_run_rows",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "rows"
     },
     {
       "label": "alertJobs",
       "file_type": "code",
       "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L36",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "scripts_parse_mock_run_alertjobs",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "alertjobs"
     },
     {
       "label": "expectedAlerts",
       "file_type": "code",
       "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L37",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "scripts_parse_mock_run_expectedalerts",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "expectedalerts"
     },
     {
       "label": "payload",
       "file_type": "code",
       "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L42",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "scripts_parse_mock_run_payload",
       "community": 1,
-      "community_name": "Scripts",
       "norm_label": "payload"
     },
     {
@@ -459,7 +859,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "forgeflowdemo.jsx"
     },
     {
@@ -470,7 +869,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_clamp",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "clamp"
     },
     {
@@ -481,7 +879,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_scenes",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "scenes"
     },
     {
@@ -492,7 +889,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_scene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "scene()"
     },
     {
@@ -503,7 +899,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_kicker",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "kicker()"
     },
     {
@@ -514,7 +909,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_titlescene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "titlescene()"
     },
     {
@@ -525,7 +919,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_problemscene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "problemscene()"
     },
     {
@@ -536,7 +929,6 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_architecturescene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "architecturescene()"
     },
     {
@@ -547,29 +939,26 @@
       "_origin": "ast",
       "id": "src_forgeflowdemo_runscene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "runscene()"
     },
     {
       "label": "CloseScene()",
       "file_type": "code",
       "source_file": "video/src/ForgeFlowDemo.jsx",
-      "source_location": "L194",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "src_forgeflowdemo_closescene",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "closescene()"
     },
     {
       "label": "ForgeFlowDemo()",
       "file_type": "code",
       "source_file": "video/src/ForgeFlowDemo.jsx",
-      "source_location": "L215",
+      "source_location": "L217",
       "_origin": "ast",
       "id": "src_forgeflowdemo_forgeflowdemo",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "forgeflowdemo()"
     },
     {
@@ -580,7 +969,6 @@
       "_origin": "ast",
       "id": "src_root",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "root.jsx"
     },
     {
@@ -591,7 +979,6 @@
       "_origin": "ast",
       "id": "src_root_remotionroot",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "remotionroot()"
     },
     {
@@ -602,8 +989,257 @@
       "_origin": "ast",
       "id": "src_index",
       "community": 0,
-      "community_name": "Video",
       "norm_label": "index.jsx"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 5,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "ForgeFlow \u2014 CNC Job Triage Demo",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_forgeflow_cnc_job_triage_demo",
+      "community": 5,
+      "norm_label": "forgeflow \u2014 cnc job triage demo"
+    },
+    {
+      "label": "Problem",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_problem",
+      "community": 5,
+      "norm_label": "problem"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "readme_architecture",
+      "community": 5,
+      "norm_label": "architecture"
+    },
+    {
+      "label": "Quickstart / Run",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "readme_quickstart_run",
+      "community": 5,
+      "norm_label": "quickstart / run"
+    },
+    {
+      "label": "Run in n8n",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "readme_run_in_n8n",
+      "community": 5,
+      "norm_label": "run in n8n"
+    },
+    {
+      "label": "Rules and limits",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "readme_rules_and_limits",
+      "community": 5,
+      "norm_label": "rules and limits"
+    },
+    {
+      "label": "Verification",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "readme_verification",
+      "community": 5,
+      "norm_label": "verification"
+    },
+    {
+      "label": "2026-06-11-forgeflow-demo-video.md",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video",
+      "community": 2,
+      "norm_label": "2026-06-11-forgeflow-demo-video.md"
+    },
+    {
+      "label": "ForgeFlow \u2014 Demo / Presentation Video \u2014 Spec",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "community": 2,
+      "norm_label": "forgeflow \u2014 demo / presentation video \u2014 spec"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_goal",
+      "community": 2,
+      "norm_label": "goal"
+    },
+    {
+      "label": "Important honesty constraint",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_important_honesty_constraint",
+      "community": 2,
+      "norm_label": "important honesty constraint"
+    },
+    {
+      "label": "Tool choice \u2014 builder decides",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_tool_choice_builder_decides",
+      "community": 2,
+      "norm_label": "tool choice \u2014 builder decides"
+    },
+    {
+      "label": "Storyboard (target ~60s)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_storyboard_target_60s",
+      "community": 2,
+      "norm_label": "storyboard (target ~60s)"
+    },
+    {
+      "label": "Deliverables (Codex builds)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_deliverables_codex_builds",
+      "community": 2,
+      "norm_label": "deliverables (codex builds)"
+    },
+    {
+      "label": "Gate",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_gate",
+      "community": 2,
+      "norm_label": "gate"
+    },
+    {
+      "label": "Out of scope",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_demo_video_out_of_scope",
+      "community": 2,
+      "norm_label": "out of scope"
+    },
+    {
+      "label": "2026-06-11-forgeflow-design.md",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design",
+      "community": 3,
+      "norm_label": "2026-06-11-forgeflow-design.md"
+    },
+    {
+      "label": "ForgeFlow \u2014 CNC Production Job Tracker (n8n + Claude) \u2014 Design",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "community": 3,
+      "norm_label": "forgeflow \u2014 cnc production job tracker (n8n + claude) \u2014 design"
+    },
+    {
+      "label": "Problem (the story we sell)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_problem_the_story_we_sell",
+      "community": 3,
+      "norm_label": "problem (the story we sell)"
+    },
+    {
+      "label": "Solution \u2014 one n8n workflow",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_solution_one_n8n_workflow",
+      "community": 3,
+      "norm_label": "solution \u2014 one n8n workflow"
+    },
+    {
+      "label": "Components / deliverables (Codex builds)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_components_deliverables_codex_builds",
+      "community": 3,
+      "norm_label": "components / deliverables (codex builds)"
+    },
+    {
+      "label": "Mock-run contract (so the gate is meaningful)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_mock_run_contract_so_the_gate_is_meaningful",
+      "community": 3,
+      "norm_label": "mock-run contract (so the gate is meaningful)"
+    },
+    {
+      "label": "Deterministic gate",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_deterministic_gate",
+      "community": 3,
+      "norm_label": "deterministic gate"
+    },
+    {
+      "label": "Out of scope (YAGNI)",
+      "file_type": "document",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "plans_2026_06_11_forgeflow_design_out_of_scope_yagni",
+      "community": 3,
+      "norm_label": "out of scope (yagni)"
     },
     {
       "label": "ForgeFlow CNC Production Job Tracker",
@@ -615,55 +1251,10 @@
         "language": "markdown"
       },
       "_origin": "deterministic_doc",
-      "id": "doc_readme_md",
       "community": 5,
       "community_name": "Project Docs",
-      "norm_label": "forgeflow cnc production job tracker"
-    },
-    {
-      "label": "Problem",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L5",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_readme_md_5_problem",
-      "community": 5,
-      "community_name": "Project Docs",
-      "norm_label": "problem"
-    },
-    {
-      "label": "Architecture",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L11",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_readme_md_11_architecture",
-      "community": 5,
-      "community_name": "Project Docs",
-      "norm_label": "architecture"
-    },
-    {
-      "label": "Quickstart / Run",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L37",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_readme_md_37_quickstart_run",
-      "community": 5,
-      "community_name": "Project Docs",
-      "norm_label": "quickstart / run"
+      "norm_label": "forgeflow cnc production job tracker",
+      "id": "doc_readme_md"
     },
     {
       "label": "Stack",
@@ -675,10 +1266,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_readme_md_66_stack",
       "community": 5,
       "community_name": "Project Docs",
-      "norm_label": "stack"
+      "norm_label": "stack",
+      "id": "heading_readme_md_66_stack"
     },
     {
       "label": "Demo Data",
@@ -690,10 +1281,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_readme_md_75_demo_data",
       "community": 5,
       "community_name": "Project Docs",
-      "norm_label": "demo data"
+      "norm_label": "demo data",
+      "id": "heading_readme_md_75_demo_data"
     },
     {
       "label": "Screenshot Placeholders",
@@ -705,10 +1296,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_readme_md_79_screenshot_placeholders",
       "community": 5,
       "community_name": "Project Docs",
-      "norm_label": "screenshot placeholders"
+      "norm_label": "screenshot placeholders",
+      "id": "heading_readme_md_79_screenshot_placeholders"
     },
     {
       "label": "docker-compose.yml",
@@ -720,70 +1311,10 @@
         "language": "text"
       },
       "_origin": "deterministic_doc",
-      "id": "doc_docker_compose_yml",
       "community": 12,
       "community_name": "Docker Compose.Yml",
-      "norm_label": "docker-compose.yml"
-    },
-    {
-      "label": "ForgeFlow \u2014 Demo / Presentation Video \u2014 Spec",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L1",
-      "metadata": {
-        "kind": "file",
-        "language": "markdown"
-      },
-      "_origin": "deterministic_doc",
-      "id": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "forgeflow \u2014 demo / presentation video \u2014 spec"
-    },
-    {
-      "label": "Goal",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L6",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_6_goal",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "goal"
-    },
-    {
-      "label": "Important honesty constraint",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L12",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_12_important_honesty_constraint",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "important honesty constraint"
-    },
-    {
-      "label": "Tool choice \u2014 builder decides",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L20",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_20_tool_choice_builder_decides",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "tool choice \u2014 builder decides"
+      "norm_label": "docker-compose.yml",
+      "id": "doc_docker_compose_yml"
     },
     {
       "label": "Storyboard target 60s",
@@ -795,10 +1326,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s",
       "community": 2,
       "community_name": "Tests",
-      "norm_label": "storyboard target 60s"
+      "norm_label": "storyboard target 60s",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s"
     },
     {
       "label": "Deliverables Codex builds",
@@ -810,55 +1341,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds",
       "community": 2,
       "community_name": "Tests",
-      "norm_label": "deliverables codex builds"
-    },
-    {
-      "label": "Gate",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L51",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_51_gate",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "gate"
-    },
-    {
-      "label": "Out of scope",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L57",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_57_out_of_scope",
-      "community": 2,
-      "community_name": "Tests",
-      "norm_label": "out of scope"
-    },
-    {
-      "label": "ForgeFlow \u2014 CNC Production Job Tracker (n8n + Claude) \u2014 Design",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L1",
-      "metadata": {
-        "kind": "file",
-        "language": "markdown"
-      },
-      "_origin": "deterministic_doc",
-      "id": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "community": 3,
-      "community_name": "n8n Workflow",
-      "norm_label": "forgeflow \u2014 cnc production job tracker (n8n + claude) \u2014 design"
+      "norm_label": "deliverables codex builds",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds"
     },
     {
       "label": "ForgeFlow \u2014 CNC Production Job Tracker n8n + Claude \u2014 Design",
@@ -870,10 +1356,10 @@
         "level": 1
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design",
       "community": 3,
       "community_name": "n8n Workflow",
-      "norm_label": "forgeflow \u2014 cnc production job tracker n8n + claude \u2014 design"
+      "norm_label": "forgeflow \u2014 cnc production job tracker n8n + claude \u2014 design",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design"
     },
     {
       "label": "Problem the story we sell",
@@ -885,25 +1371,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell",
       "community": 3,
       "community_name": "n8n Workflow",
-      "norm_label": "problem the story we sell"
-    },
-    {
-      "label": "Solution \u2014 one n8n workflow",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L15",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_15_solution_one_n8n_workflow",
-      "community": 3,
-      "community_name": "n8n Workflow",
-      "norm_label": "solution \u2014 one n8n workflow"
+      "norm_label": "problem the story we sell",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell"
     },
     {
       "label": "Components / deliverables Codex builds",
@@ -915,10 +1386,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds",
       "community": 3,
       "community_name": "n8n Workflow",
-      "norm_label": "components / deliverables codex builds"
+      "norm_label": "components / deliverables codex builds",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds"
     },
     {
       "label": "Mock-run contract so the gate is meaningful",
@@ -930,25 +1401,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful",
       "community": 3,
       "community_name": "n8n Workflow",
-      "norm_label": "mock-run contract so the gate is meaningful"
-    },
-    {
-      "label": "Deterministic gate",
-      "file_type": "document",
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L53",
-      "metadata": {
-        "kind": "heading",
-        "level": 2
-      },
-      "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_53_deterministic_gate",
-      "community": 3,
-      "community_name": "n8n Workflow",
-      "norm_label": "deterministic gate"
+      "norm_label": "mock-run contract so the gate is meaningful",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful"
     },
     {
       "label": "Out of scope YAGNI",
@@ -960,10 +1416,10 @@
         "level": 2
       },
       "_origin": "deterministic_doc",
-      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni",
       "community": 3,
       "community_name": "n8n Workflow",
-      "norm_label": "out of scope yagni"
+      "norm_label": "out of scope yagni",
+      "id": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni"
     },
     {
       "label": "mock-run.txt",
@@ -975,13 +1431,83 @@
         "language": "text"
       },
       "_origin": "deterministic_doc",
-      "id": "doc_video_data_mock_run_txt",
       "community": 13,
       "community_name": "Video",
-      "norm_label": "mock-run.txt"
+      "norm_label": "mock-run.txt",
+      "id": "doc_video_data_mock_run_txt"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_artifacts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_makeworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_parsed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_samples",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-workflows.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_build_workflows",
+      "target": "scripts_build_workflows_slug",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -989,7 +1515,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "scripts_gate_video",
-      "target": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_video_sh__entry",
       "confidence_score": 1.0
     },
     {
@@ -998,9 +1524,9 @@
       "source_file": "scripts/gate-video.sh",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_gate_video",
-      "target": "scripts_gate_video_fail",
-      "confidence_score": 1.0
+      "target": "scripts_gate_video_fail"
     },
     {
       "relation": "calls",
@@ -1009,7 +1535,7 @@
       "source_location": "L13",
       "weight": 1.0,
       "context": "call",
-      "source": "home_pato_projects_personal_forgeflow_scripts_gate_video_sh__entry",
+      "source": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_video_sh__entry",
       "target": "scripts_gate_video_fail",
       "confidence_score": 1.0
     },
@@ -1020,7 +1546,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "scripts_gate",
-      "target": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_sh__entry",
       "confidence_score": 1.0
     },
     {
@@ -1029,9 +1555,9 @@
       "source_file": "scripts/gate.sh",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_gate",
-      "target": "scripts_gate_check_cat",
-      "confidence_score": 1.0
+      "target": "scripts_gate_check_cat"
     },
     {
       "relation": "defines",
@@ -1039,9 +1565,9 @@
       "source_file": "scripts/gate.sh",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_gate",
-      "target": "scripts_gate_fail",
-      "confidence_score": 1.0
+      "target": "scripts_gate_fail"
     },
     {
       "relation": "calls",
@@ -1050,7 +1576,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "context": "call",
-      "source": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "source": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_sh__entry",
       "target": "scripts_gate_check_cat",
       "confidence_score": 1.0
     },
@@ -1061,7 +1587,7 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "call",
-      "source": "home_pato_projects_personal_forgeflow_scripts_gate_sh__entry",
+      "source": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_gate_sh__entry",
       "target": "scripts_gate_fail",
       "confidence_score": 1.0
     },
@@ -1072,9 +1598,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "scripts_gate_check_cat",
-      "target": "scripts_gate_fail",
-      "confidence_score": 1.0
+      "target": "scripts_gate_fail"
     },
     {
       "relation": "contains",
@@ -1083,7 +1609,217 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "scripts_mock_run",
-      "target": "home_pato_projects_personal_forgeflow_scripts_mock_run_sh__entry",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_mock_run_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/mock-run.sh",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_mock_run",
+      "target": "scripts_mock_run_forgeflow_today",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_assert_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_decode_execution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_expected_jobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_output_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_provider_boundary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke",
+      "target": "scripts_n8n_smoke_run_case",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_expected_jobs",
+      "target": "scripts_n8n_smoke_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_main",
+      "target": "scripts_n8n_smoke_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_run_case",
+      "target": "scripts_n8n_smoke_decode_execution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_assert_results",
+      "target": "scripts_n8n_smoke_output_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_main",
+      "target": "scripts_n8n_smoke_output_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_run_case",
+      "target": "scripts_n8n_smoke_output_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_run_case",
+      "target": "scripts_n8n_smoke_expected_jobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_run_case",
+      "target": "scripts_n8n_smoke_assert_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_main",
+      "target": "scripts_n8n_smoke_run_case",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/n8n-smoke.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scripts_n8n_smoke_main",
+      "target": "scripts_n8n_smoke_provider_boundary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/read-csv.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_read_csv",
+      "target": "scripts_read_csv_read_jobs",
       "confidence_score": 1.0
     },
     {
@@ -1093,7 +1829,39 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "scripts_render_video",
-      "target": "home_pato_projects_personal_forgeflow_scripts_render_video_sh__entry",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_render_video_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/render-video.sh",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_render_video",
+      "target": "scripts_render_video_forgeflow_today",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/run-jobs.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_run_jobs",
+      "target": "src_job_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/run-jobs.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_run_jobs",
+      "target": "src_job_engine_processjobs",
       "confidence_score": 1.0
     },
     {
@@ -1103,7 +1871,255 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "scripts_validate",
-      "target": "home_pato_projects_personal_forgeflow_scripts_validate_sh__entry",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_validate_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/verify.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_verify",
+      "target": "home_pato_config_superpowers_worktrees_forgeflow_proof_review_scripts_verify_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_calendardate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_processjob",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_processjobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_quantity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_job_engine",
+      "target": "src_job_engine_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tests_test_engine",
+      "target": "src_job_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_job_engine_normalize",
+      "target": "src_job_engine_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_job_engine_normalize",
+      "target": "src_job_engine_calendardate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_job_engine_processjob",
+      "target": "src_job_engine_calendardate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_job_engine_normalize",
+      "target": "src_job_engine_quantity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/job-engine.mjs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_job_engine_processjob",
+      "target": "src_job_engine_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tests_test_engine",
+      "target": "src_job_engine_processjob",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tests_test_engine",
+      "target": "src_job_engine_processjobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-cli.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_cli",
+      "target": "tests_test_cli_runcsv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_test_engine",
+      "target": "tests_test_engine_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-engine.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_engine",
+      "target": "tests_test_engine_clock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-video-parser.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_video_parser",
+      "target": "tests_test_video_parser_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_workflows",
+      "target": "tests_test_workflows_find",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_workflows",
+      "target": "tests_test_workflows_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_workflows",
+      "target": "tests_test_workflows_providertypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_workflows",
+      "target": "tests_test_workflows_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-workflows.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_test_workflows",
+      "target": "tests_test_workflows_runcode",
       "confidence_score": 1.0
     },
     {
@@ -1112,9 +2128,9 @@
       "source_file": "video/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_dependencies",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies"
     },
     {
       "relation": "contains",
@@ -1122,9 +2138,9 @@
       "source_file": "video/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "video_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1132,9 +2148,9 @@
       "source_file": "video/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_name",
-      "confidence_score": 1.0
+      "target": "video_package_name"
     },
     {
       "relation": "contains",
@@ -1142,9 +2158,9 @@
       "source_file": "video/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_private",
-      "confidence_score": 1.0
+      "target": "video_package_private"
     },
     {
       "relation": "contains",
@@ -1152,9 +2168,9 @@
       "source_file": "video/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_scripts",
-      "confidence_score": 1.0
+      "target": "video_package_scripts"
     },
     {
       "relation": "contains",
@@ -1162,9 +2178,9 @@
       "source_file": "video/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_type",
-      "confidence_score": 1.0
+      "target": "video_package_type"
     },
     {
       "relation": "contains",
@@ -1172,9 +2188,9 @@
       "source_file": "video/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package",
-      "target": "video_package_version",
-      "confidence_score": 1.0
+      "target": "video_package_version"
     },
     {
       "relation": "contains",
@@ -1182,9 +2198,9 @@
       "source_file": "video/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_scripts",
-      "target": "video_package_scripts_render",
-      "confidence_score": 1.0
+      "target": "video_package_scripts_render"
     },
     {
       "relation": "contains",
@@ -1192,9 +2208,9 @@
       "source_file": "video/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_dependencies",
-      "target": "video_package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1202,9 +2218,9 @@
       "source_file": "video/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_dependencies",
-      "target": "video_package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -1212,9 +2228,9 @@
       "source_file": "video/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_dependencies",
-      "target": "video_package_dependencies_remotion",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies_remotion"
     },
     {
       "relation": "contains",
@@ -1222,9 +2238,9 @@
       "source_file": "video/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_dependencies",
-      "target": "video_package_dependencies_remotion_cli",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies_remotion_cli"
     },
     {
       "relation": "contains",
@@ -1232,9 +2248,9 @@
       "source_file": "video/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "video_package_dependencies",
-      "target": "video_package_dependencies_remotion_compositor_linux_x64_gnu",
-      "confidence_score": 1.0
+      "target": "video_package_dependencies_remotion_compositor_linux_x64_gnu"
     },
     {
       "relation": "contains",
@@ -1242,9 +2258,9 @@
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_alertjobs",
-      "confidence_score": 1.0
+      "target": "scripts_parse_mock_run_alertjobs"
     },
     {
       "relation": "contains",
@@ -1252,29 +2268,9 @@
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_expectedalerts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_inputline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "video/scripts/parse-mock-run.mjs",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_inputmatch",
-      "confidence_score": 1.0
+      "target": "scripts_parse_mock_run_expectedalerts"
     },
     {
       "relation": "contains",
@@ -1283,7 +2279,7 @@
       "source_location": "L5",
       "weight": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_lines",
+      "target": "scripts_parse_mock_run_jobs",
       "confidence_score": 1.0
     },
     {
@@ -1292,9 +2288,9 @@
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_payload",
-      "confidence_score": 1.0
+      "target": "scripts_parse_mock_run_payload"
     },
     {
       "relation": "contains",
@@ -1302,9 +2298,9 @@
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_raw",
-      "confidence_score": 1.0
+      "target": "scripts_parse_mock_run_raw"
     },
     {
       "relation": "contains",
@@ -1312,9 +2308,9 @@
       "source_file": "video/scripts/parse-mock-run.mjs",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_parse_mock_run",
-      "target": "scripts_parse_mock_run_rows",
-      "confidence_score": 1.0
+      "target": "scripts_parse_mock_run_rows"
     },
     {
       "relation": "contains",
@@ -1322,9 +2318,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_architecturescene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_architecturescene"
     },
     {
       "relation": "contains",
@@ -1332,9 +2328,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_clamp",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_clamp"
     },
     {
       "relation": "contains",
@@ -1342,9 +2338,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_closescene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_closescene"
     },
     {
       "relation": "contains",
@@ -1352,9 +2348,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_forgeflowdemo",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_forgeflowdemo"
     },
     {
       "relation": "contains",
@@ -1362,9 +2358,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_kicker",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_kicker"
     },
     {
       "relation": "contains",
@@ -1372,9 +2368,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_problemscene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_problemscene"
     },
     {
       "relation": "contains",
@@ -1382,9 +2378,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_runscene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_runscene"
     },
     {
       "relation": "contains",
@@ -1392,9 +2388,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_scene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_scene"
     },
     {
       "relation": "contains",
@@ -1402,9 +2398,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_scenes",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_scenes"
     },
     {
       "relation": "contains",
@@ -1412,9 +2408,9 @@
       "source_file": "video/src/ForgeFlowDemo.jsx",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_forgeflowdemo",
-      "target": "src_forgeflowdemo_titlescene",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_titlescene"
     },
     {
       "relation": "imports_from",
@@ -1423,9 +2419,9 @@
       "source_file": "video/src/Root.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_root",
-      "target": "src_forgeflowdemo",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo"
     },
     {
       "relation": "imports",
@@ -1434,9 +2430,9 @@
       "source_file": "video/src/Root.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_root",
-      "target": "src_forgeflowdemo_forgeflowdemo",
-      "confidence_score": 1.0
+      "target": "src_forgeflowdemo_forgeflowdemo"
     },
     {
       "relation": "imports_from",
@@ -1445,9 +2441,9 @@
       "source_file": "video/src/index.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index",
-      "target": "src_root",
-      "confidence_score": 1.0
+      "target": "src_root"
     },
     {
       "relation": "contains",
@@ -1455,9 +2451,9 @@
       "source_file": "video/src/Root.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_root",
-      "target": "src_root_remotionroot",
-      "confidence_score": 1.0
+      "target": "src_root_remotionroot"
     },
     {
       "relation": "imports",
@@ -1466,9 +2462,79 @@
       "source_file": "video/src/index.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index",
-      "target": "src_root_remotionroot",
+      "target": "src_root_remotionroot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_forgeflow_cnc_job_triage_demo",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "readme_forgeflow_cnc_job_triage_demo",
+      "target": "readme_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "readme_forgeflow_cnc_job_triage_demo",
+      "target": "readme_problem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "readme_forgeflow_cnc_job_triage_demo",
+      "target": "readme_quickstart_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "readme_forgeflow_cnc_job_triage_demo",
+      "target": "readme_rules_and_limits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "readme_forgeflow_cnc_job_triage_demo",
+      "target": "readme_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
+      "source": "doc_readme_md",
+      "target": "readme_problem"
     },
     {
       "relation": "contains",
@@ -1478,7 +2544,257 @@
       "source_file": "README.md",
       "source_location": "L11",
       "source": "doc_readme_md",
-      "target": "heading_readme_md_11_architecture"
+      "target": "readme_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "README.md",
+      "source_location": "L37",
+      "source": "doc_readme_md",
+      "target": "readme_quickstart_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "readme_quickstart_run",
+      "target": "readme_run_in_n8n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_demo_video",
+      "target": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L1",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L15",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_important_honesty_constraint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L23",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_tool_choice_builder_decides"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L30",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L43",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L54",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_gate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L60",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_out_of_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L9",
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_goal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_deliverables_codex_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_demo_video_forgeflow_demo_presentation_video_spec",
+      "target": "plans_2026_06_11_forgeflow_demo_video_storyboard_target_60s",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_design",
+      "target": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L18",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_solution_one_n8n_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L1",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L31",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L43",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L56",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_deterministic_gate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L60",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L9",
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_components_deliverables_codex_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_mock_run_contract_so_the_gate_is_meaningful",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_out_of_scope_yagni",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "plans_2026_06_11_forgeflow_design_forgeflow_cnc_production_job_tracker_n8n_claude_design",
+      "target": "plans_2026_06_11_forgeflow_design_problem_the_story_we_sell",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1489,26 +2805,6 @@
       "source_location": "L1",
       "source": "doc_readme_md",
       "target": "doc_readme_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "README.md",
-      "source_location": "L37",
-      "source": "doc_readme_md",
-      "target": "heading_readme_md_37_quickstart_run"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "README.md",
-      "source_location": "L5",
-      "source": "doc_readme_md",
-      "target": "heading_readme_md_5_problem"
     },
     {
       "relation": "contains",
@@ -1539,158 +2835,8 @@
       "source_location": "L79",
       "source": "doc_readme_md",
       "target": "heading_readme_md_79_screenshot_placeholders"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L12",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_12_important_honesty_constraint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L1",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L20",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_20_tool_choice_builder_decides"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L30",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_30_storyboard_target_60s"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L43",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_43_deliverables_codex_builds"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L51",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_51_gate"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L57",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_57_out_of_scope"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-demo-video.md",
-      "source_location": "L6",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_demo_video_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_demo_video_md_6_goal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L15",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_15_solution_one_n8n_workflow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L1",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_1_forgeflow_cnc_production_job_tracker_n8n_claude_design"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L31",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_31_components_deliverables_codex_builds"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L43",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_43_mock_run_contract_so_the_gate_is_meaningful"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L53",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_53_deterministic_gate"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L60",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_60_out_of_scope_yagni"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "docs/plans/2026-06-11-forgeflow-design.md",
-      "source_location": "L9",
-      "source": "doc_docs_plans_2026_06_11_forgeflow_design_md",
-      "target": "heading_docs_plans_2026_06_11_forgeflow_design_md_9_problem_the_story_we_sell"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f29dea03f730895f7039bb684ed08bf2cd27dabd"
+  "built_at_commit": "08bc7f00eca1b7ac8ceea11867421d27adde0cc2"
 }
