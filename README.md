@@ -83,7 +83,11 @@ These are explicit demonstration heuristics, not a capacity planner or natural-l
 bash scripts/verify.sh
 ```
 
-The chain checks the original PM-owned gates, deterministic rules, real CSV ingestion, generated workflow consistency, provider boundaries with offline responses, and an actual execution in **n8n 2.49.6** with Docker networking disabled. It needs no live credentials. The first runtime check pulls the pinned n8n image if missing; subsequent runs can use the cached image.
+The chain checks the original PM-owned gates, deterministic rules, real CSV ingestion, generated workflow consistency, provider boundaries with offline responses, and an actual execution in **n8n 2.49.6** with Docker networking disabled. It needs no live credentials. Before the first runtime check, cache the pinned image from Compose:
+
+```bash
+docker compose pull
+```
 
 Useful individual checks:
 
