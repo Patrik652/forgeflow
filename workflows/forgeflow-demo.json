@@ -1,0 +1,446 @@
+{
+  "id": "forgeflowDemo",
+  "name": "forgeflow-demo",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-demo-trigger",
+      "name": "Manual Demo Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1000,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generated from sample-data/jobs.csv by scripts/build-workflows.mjs.\nreturn [\n  {\n    \"job_id\": \"J-1001\",\n    \"part_name\": \"Spindle housing\",\n    \"material\": \"Aluminium 6061\",\n    \"qty\": \"12\",\n    \"due_date\": \"2026-06-25\",\n    \"requested_machine\": \"milling\",\n    \"customer\": \"Vortex Drives\",\n    \"notes\": \"standard tolerance +/-0.05mm\"\n  },\n  {\n    \"job_id\": \"J-1002\",\n    \"part_name\": \"Drive shaft\",\n    \"material\": \"Steel 4140\",\n    \"qty\": \"40\",\n    \"due_date\": \"2026-06-09\",\n    \"requested_machine\": \"turning\",\n    \"customer\": \"Kessler Automotive\",\n    \"notes\": \"OVERDUE - customer escalated twice\"\n  },\n  {\n    \"job_id\": \"J-1003\",\n    \"part_name\": \"Sensor bracket\",\n    \"material\": \"Stainless 316\",\n    \"qty\": \"200\",\n    \"due_date\": \"2026-06-12\",\n    \"requested_machine\": \"laser\",\n    \"customer\": \"NordHVAC\",\n    \"notes\": \"tight slot pattern at-risk\"\n  },\n  {\n    \"job_id\": \"J-1004\",\n    \"part_name\": \"Mold insert\",\n    \"material\": \"Tool steel H13\",\n    \"qty\": \"2\",\n    \"due_date\": \"2026-07-02\",\n    \"requested_machine\": \"edm\",\n    \"customer\": \"PrecisionMold GmbH\",\n    \"notes\": \"fine EDM finish required\"\n  },\n  {\n    \"job_id\": \"J-1005\",\n    \"part_name\": \"Flange ring\",\n    \"material\": \"Aluminium 7075\",\n    \"qty\": \"25\",\n    \"due_date\": \"2026-06-10\",\n    \"requested_machine\": \"turning\",\n    \"customer\": \"Vortex Drives\",\n    \"notes\": \"high priority - line stoppage if late\"\n  },\n  {\n    \"job_id\": \"J-1006\",\n    \"part_name\": \"Cover plate\",\n    \"material\": \"Brass C360\",\n    \"qty\": \"60\",\n    \"due_date\": \"2026-06-28\",\n    \"requested_machine\": \"milling\",\n    \"customer\": \"Kessler Automotive\",\n    \"notes\": \"low priority restock\"\n  },\n  {\n    \"job_id\": \"J-1007\",\n    \"part_name\": \"Heat exchanger fin\",\n    \"material\": \"Copper C110\",\n    \"qty\": \"500\",\n    \"due_date\": \"2026-06-13\",\n    \"requested_machine\": \"laser\",\n    \"customer\": \"NordHVAC\",\n    \"notes\": \"batch run at-risk on capacity\"\n  },\n  {\n    \"job_id\": \"J-1008\",\n    \"part_name\": \"Gear blank\",\n    \"material\": \"Steel 4140\",\n    \"qty\": \"18\",\n    \"due_date\": \"2026-06-24\",\n    \"requested_machine\": \"turning\",\n    \"customer\": \"PrecisionMold GmbH\",\n    \"notes\": \"standard\"\n  }\n].map((json) => ({ json }));"
+      },
+      "id": "sample-csv-jobs",
+      "name": "Sample CSV Jobs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -780,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Shared engine; edit src/job-engine.mjs, then regenerate this workflow.\n// Pure rules shared by the CLI and generated n8n Code nodes. No provider calls.\nconst referenceToday = '2026-06-11';\n\nfunction text(value, field, optional = false) {\n  if (typeof value !== 'string' || value.length > 4000 || (!optional && !value.trim())) {\n    throw new Error(`Invalid ${field}: expected ${optional ? 'a' : 'a nonempty'} string (max 4000 characters)`);\n  }\n  return value.trim();\n}\n\nfunction calendarDate(value, field) {\n  if (typeof value !== 'string' || !/^\\d{4}-\\d{2}-\\d{2}$/.test(value) ||\n      !Number.isFinite(Date.parse(`${value}T00:00:00Z`)) ||\n      new Date(`${value}T00:00:00Z`).toISOString().slice(0, 10) !== value) {\n    throw new Error(`Invalid ${field}: expected a real YYYY-MM-DD date`);\n  }\n  return value;\n}\n\nfunction quantity(value) {\n  if (!['number', 'string'].includes(typeof value) ||\n      (typeof value === 'string' && !/^[1-9]\\d*$/.test(value.trim()))) {\n    throw new Error('Invalid qty: expected a positive safe integer');\n  }\n  const result = Number(value);\n  if (!Number.isSafeInteger(result) || result <= 0) throw new Error('Invalid qty: expected a positive safe integer');\n  return result;\n}\n\nfunction normalize(input, options) {\n  if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('Invalid job: expected an object');\n  const job = {};\n  for (const field of ['job_id', 'part_name', 'material', 'customer', 'requested_machine']) {\n    job[field] = text(input[field], field);\n  }\n  job.qty = quantity(input.qty);\n  job.due_date = calendarDate(input.due_date, 'due_date');\n  job.notes = text(input.notes ?? '', 'notes', true);\n  const received = options.receivedAt ?? input.received_at ?? new Date().toISOString();\n  if (typeof received !== 'string' || !/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2})$/.test(received) ||\n      !Number.isFinite(Date.parse(received))) throw new Error('Invalid received_at: expected an ISO timestamp with timezone');\n  calendarDate(received.slice(0, 10), 'received_at');\n  job.received_at = new Date(received).toISOString();\n  return job;\n}\n\nfunction processJob(input, options = {}) {\n  const today = calendarDate(options.today, 'today');\n  const job = normalize(input, options);\n  const machine_type = job.requested_machine.toLowerCase();\n  const routes = {milling: 'MILL', turning: 'LATHE', laser: 'LASER', edm: 'EDM'};\n  const route = Object.hasOwn(routes, machine_type) ? routes[machine_type] : 'REVIEW';\n  const notes = job.notes.toLowerCase();\n  const eta_risk = job.due_date < today ? 'late' :\n    job.due_date === today || /at-risk|at risk|capacity/.test(notes) ? 'at_risk' : 'on_track';\n  const priority = /high priority|line stoppage|escalated|overdue/.test(notes) ? 'high' :\n    /low priority/.test(notes) ? 'low' : 'medium';\n  const alert_required = eta_risk === 'late' || priority === 'high';\n  const review_required = route === 'REVIEW';\n  return {...job, machine_type, route, eta_risk, priority, alert_required, review_required,\n    action: alert_required ? 'ALERT' : review_required ? 'REVIEW' : 'BOARD',\n    classification_reason: `${job.material} for ${job.customer}; due ${job.due_date}; ${job.notes}`};\n}\n\nfunction processJobs(inputs, options = {}) {\n  if (!Array.isArray(inputs) || !inputs.length || inputs.length > 10000) {\n    throw new Error('Invalid jobs: expected an array of 1–10000 jobs');\n  }\n  const jobs = inputs.map(input => processJob(input, options));\n  const ids = new Set();\n  for (const job of jobs) {\n    if (ids.has(job.job_id)) throw new Error('Duplicate job_id in batch');\n    ids.add(job.job_id);\n  }\n  return jobs;\n}\n\nconst input = $input.all();\nconst jobs = input.map((item) => item.json.body ?? item.json);\nconst results = processJobs(jobs, { today: referenceToday, receivedAt: referenceToday + 'T12:00:00.000Z' });\nreturn results.map((json, index) => ({ json, pairedItem: { item: index } }));"
+      },
+      "id": "deterministic-triage",
+      "name": "Deterministic Triage",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -520,
+        60
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "milling",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "milling"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "turning",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "turning"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "laser",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "laser"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.machine_type}}",
+                    "rightValue": "edm",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "edm"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "switch-route-by-machine",
+      "name": "Switch - Route by Machine",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [
+        -240,
+        60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "milling-work-center",
+      "name": "Milling Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -260
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "turning-work-center",
+      "name": "Turning Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -100
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "laser-work-center",
+      "name": "Laser Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "edm-work-center",
+      "name": "EDM Work Center",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        220
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "planner-review",
+      "name": "Planner Review",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return $input.all().map((item, index) => ({ json: { ...item.json }, pairedItem: { item: index } }));"
+      },
+      "id": "local-board-rows",
+      "name": "Local Board Rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        60
+      ],
+      "notes": "Local board preview output only. Rows are not persisted or sent to a provider by the credential-free demo."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{$json.alert_required}}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-late-or-high-priority",
+      "name": "IF - Late or High Priority",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        740,
+        60
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return $input.all().map((item, index) => ({ json: { ...item.json, alert_text: `ForgeFlow ALERT: ${item.json.job_id} ${item.json.part_name} for ${item.json.customer} is ${item.json.eta_risk} / ${item.json.priority} priority on ${item.json.route}. Due ${item.json.due_date}. ${item.json.classification_reason}` }, pairedItem: { item: index } }));"
+      },
+      "id": "local-alert-messages",
+      "name": "Local Alert Messages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        980,
+        -100
+      ],
+      "notes": "Local alert preview. No message is sent by this node."
+    },
+    {
+      "parameters": {},
+      "id": "board-only",
+      "name": "Board Only",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        980,
+        180
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Demo Trigger": {
+      "main": [
+        [
+          {
+            "node": "Sample CSV Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample CSV Jobs": {
+      "main": [
+        [
+          {
+            "node": "Deterministic Triage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deterministic Triage": {
+      "main": [
+        [
+          {
+            "node": "Switch - Route by Machine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch - Route by Machine": {
+      "main": [
+        [
+          {
+            "node": "Milling Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Turning Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Laser Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "EDM Work Center",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Planner Review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Milling Work Center": {
+      "main": [
+        [
+          {
+            "node": "Local Board Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Turning Work Center": {
+      "main": [
+        [
+          {
+            "node": "Local Board Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Laser Work Center": {
+      "main": [
+        [
+          {
+            "node": "Local Board Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "EDM Work Center": {
+      "main": [
+        [
+          {
+            "node": "Local Board Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Planner Review": {
+      "main": [
+        [
+          {
+            "node": "Local Board Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Local Board Rows": {
+      "main": [
+        [
+          {
+            "node": "IF - Late or High Priority",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF - Late or High Priority": {
+      "main": [
+        [
+          {
+            "node": "Local Alert Messages",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Board Only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "forgeflowRuntimeVersion": "2.49.6",
+    "forgeflowMode": "credential-free-demo",
+    "referenceToday": "2026-06-11"
+  }
+}

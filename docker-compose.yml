@@ -1,24 +1,23 @@
 services:
   n8n:
-    image: n8nio/n8n:latest
+    image: docker.n8n.io/n8nio/n8n:2.49.6@sha256:a1a9955a4a9e5dd9fa65a62f59e0751351b45b9e5cd2c17e6e330a8d0026cad8
     restart: unless-stopped
     ports:
-      - "5678:5678"
-    env_file:
-      - .env
+      - "127.0.0.1:5678:5678"
     environment:
       N8N_HOST: localhost
       N8N_PORT: 5678
       N8N_PROTOCOL: http
-      N8N_BASIC_AUTH_ACTIVE: "true"
-      N8N_BASIC_AUTH_USER: ${N8N_BASIC_AUTH_USER:-admin}
-      N8N_BASIC_AUTH_PASSWORD: ${N8N_BASIC_AUTH_PASSWORD:-changeme}
       WEBHOOK_URL: http://localhost:5678/
-      GENERIC_TIMEZONE: Europe/Bratislava
+      GENERIC_TIMEZONE: ${GENERIC_TIMEZONE:-Europe/Bratislava}
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      N8N_VERSION_NOTIFICATIONS_ENABLED: "false"
+      N8N_TEMPLATES_ENABLED: "false"
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "true"
     volumes:
       - n8n_data:/home/node/.n8n
       - ./workflows:/workflows:ro
-      - ./sample-data:/sample-data:ro
 
 volumes:
   n8n_data:
