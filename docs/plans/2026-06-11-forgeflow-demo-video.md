@@ -1,6 +1,9 @@
 # ForgeFlow — Demo / Presentation Video — Spec
 
 Date: 2026-06-11
+
+> Historical storyboard. Updated on 2026-11-25: the rendered video presents the credential-free demo, shared deterministic rules, eight synthetic jobs and two alert previews at reference date 2026-06-11. It reads structured CLI output; external integrations are shown as a disabled, unverified template. See [README](../../README.md) for the current run and verification commands. Original PM-owned video gate remains unchanged.
+
 Owner: Patrik (SYNAPTIC FORGE) — PM: Claude, Builder: Codex (codex-runner)
 
 ## Goal

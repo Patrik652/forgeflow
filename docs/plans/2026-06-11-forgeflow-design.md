@@ -1,6 +1,9 @@
 # ForgeFlow — CNC Production Job Tracker (n8n + Claude) — Design
 
 Date: 2026-06-11
+
+> Historical design, superseded on 2026-11-25 by the [current implementation contract](../../README.md). The executable demo now uses shared deterministic rules and local output previews. Anthropic, Sheets and Telegram remain disabled in a separate integration template. Runtime verification is `bash scripts/verify.sh`; the original PM-owned gates remain unchanged. The text below records the original plan, not a claim of live delivery.
+
 Owner: Patrik (SYNAPTIC FORGE)
 Purpose: **Public proof asset** that closes the "no n8n portfolio" gap. Unlocks
 Upwork n8n proposals + the inbound-platform pivot (n8n Markets / Contra /
