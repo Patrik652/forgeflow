@@ -46,7 +46,7 @@ bash scripts/mock-run.sh
 bash scripts/mock-run.sh --json
 ```
 
-The bundled eight-job fixture deliberately uses **2026-06-11** as its reference date. It produces eight board rows and exactly two alert previews: `J-1002` and `J-1005`. These are reference results, not today's production status.
+The bundled eight-job fixture deliberately uses **2026-06-11** as its reference date. It produces eight board rows and exactly two alert previews: `J-1002` and `J-1005`. These are reference results, not today's production status. The integration template uses the current **UTC** date; the Compose editor timezone does not change that rule. Running the historical fixture through that template today can therefore mark every job late.
 
 For your own CSV, supply a date explicitly:
 
