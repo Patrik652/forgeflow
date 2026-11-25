@@ -42,7 +42,7 @@ const TitleScene = () => {
     <Scene range={scenes.title} className="title-scene">
       <div className="steel-grid" />
       <div className="title-lockup" style={{transform: `translateY(${(1 - lift) * 42}px)`}}>
-        <Kicker>offline proof asset</Kicker>
+        <Kicker>synthetic fixture · reference clock 2026-06-11</Kicker>
         <h1>ForgeFlow</h1>
         <p>CNC Production Job Tracker</p>
         <div className="brand-line">by SYNAPTIC FORGE</div>
@@ -87,12 +87,12 @@ const ProblemScene = () => {
 const ArchitectureScene = () => {
   const frame = useCurrentFrame();
   const nodes = [
-    ['Webhook / Job', 'sample-data CSV or incoming job'],
-    ['Claude classify', 'ETA risk, priority, route'],
-    ['Switch', 'MILL / LATHE / LASER / EDM'],
-    ['Sheets board', 'production visibility'],
-    ['IF', 'late or high priority?'],
-    ['Telegram', 'alert only when it matters'],
+    ['Manual fixture', '8 synthetic jobs from CSV'],
+    ['Shared rules', 'ETA risk, priority, route'],
+    ['Route switch', '4 work centers + planner review'],
+    ['Local board', 'row preview · no write'],
+    ['Alert rule', 'late or high priority?'],
+    ['Local alerts', 'message preview · no send'],
   ];
   const local = frame - scenes.architecture[0];
   const progress = interpolate(local, [20, 430], [0, 1], clamp);
@@ -100,8 +100,8 @@ const ArchitectureScene = () => {
   return (
     <Scene range={scenes.architecture} className="architecture-scene">
       <div className="section-head">
-        <Kicker>architecture flow</Kicker>
-        <h2>n8n orchestrates the job path. Claude supplies the routing judgment.</h2>
+        <Kicker>safe n8n demo · no provider calls</Kicker>
+        <h2>Shared rules route jobs. Local previews show the outcome.</h2>
       </div>
       <div className="flow-wrap">
         <div className="flow-line">
@@ -125,7 +125,7 @@ const ArchitectureScene = () => {
         <span>LATHE</span>
         <span>LASER</span>
         <span>EDM</span>
-        <span>ALERT</span>
+        <span>REVIEW</span>
       </div>
     </Scene>
   );
@@ -140,13 +140,15 @@ const RunScene = ({mockRun}) => {
     <Scene range={scenes.run} className="run-scene">
       <div className="run-layout">
         <div className="run-copy">
-          <Kicker>real offline run</Kicker>
-          <h2>Actual routing output from `bash scripts/mock-run.sh`</h2>
+          <Kicker>actual offline output · synthetic data</Kicker>
+          <h2>8 jobs. 2 alert previews.</h2>
           <p>
-            Input: {mockRun.input} · Today: {mockRun.today}
+            bash scripts/mock-run.sh --json<br />
+            Fixture: {mockRun.input}<br />
+            Reference clock: {mockRun.today}
           </p>
           <div className="proof-callout">
-            <strong>Honesty constraint:</strong> J-1002 and J-1005 are the only ALERT rows.
+            J-1002 and J-1005 are the only ALERT rows. Local previews only; no external delivery.
           </div>
         </div>
         <div className="routing-table">
@@ -201,12 +203,12 @@ const CloseScene = () => {
       <div className="close-mark" style={{filter: `drop-shadow(0 0 ${24 + glow * 40}px rgba(87, 225, 183, 0.32))`}}>
         SYNAPTIC FORGE
       </div>
-      <h2>n8n + Claude.</h2>
-      <p>Built solo via a Claude + Codex pipeline.</p>
+      <h2>Rules first. AI optional.</h2>
+      <p>Anthropic / Sheets / Telegram: disabled integration template.</p>
       <div className="cta-row">
-        <span>ForgeFlow</span>
-        <span>demo-ready automation proof</span>
-        <span>by SYNAPTIC FORGE</span>
+        <span>Local synthetic demo</span>
+        <span>External integrations unverified</span>
+        <span>No live or client deployment shown</span>
       </div>
     </Scene>
   );

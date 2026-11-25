@@ -6,11 +6,11 @@ cd "$ROOT"
 
 mkdir -p media video/data
 
-bash scripts/mock-run.sh > video/data/mock-run.txt
-node video/scripts/parse-mock-run.mjs video/data/mock-run.txt video/data/mock-run.json
+# The video documents this historical synthetic fixture, regardless of caller environment.
+export FORGEFLOW_TODAY=2026-06-11
+bash scripts/mock-run.sh --json > video/data/mock-run-output.json
+node video/scripts/parse-mock-run.mjs video/data/mock-run-output.json video/data/mock-run.json
 
-if [ ! -d video/node_modules ]; then
-  npm --prefix video install --no-audit --no-fund
-fi
+npm --prefix video ci --no-audit --no-fund
 
-npm --prefix video run render
+npm --prefix video run render -- "$@"

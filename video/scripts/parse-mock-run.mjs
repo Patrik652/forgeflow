@@ -1,37 +1,23 @@
 import fs from 'node:fs';
 
-const [, , inputPath = 'video/data/mock-run.txt', outputPath = 'video/data/mock-run.json'] = process.argv;
+const [, , inputPath = 'video/data/mock-run-output.json', outputPath = 'video/data/mock-run.json'] = process.argv;
 const raw = fs.readFileSync(inputPath, 'utf8');
-const lines = raw.split(/\r?\n/);
-const inputLine = lines.find((line) => line.startsWith('Input: '));
+const jobs = JSON.parse(raw);
 
-if (!inputLine) {
-  throw new Error('mock-run output is missing the Input/Today line');
+if (!Array.isArray(jobs) || jobs.length !== 8) {
+  throw new Error('expected 8 synthetic jobs from the bundled fixture');
 }
 
-const inputMatch = inputLine.match(/^Input:\s*(.*?)\s*\|\s*Today:\s*(.*)$/);
-if (!inputMatch) {
-  throw new Error(`could not parse mock-run input line: ${inputLine}`);
-}
-
-const rows = lines
-  .filter((line) => /^J-\d+\s+\|/.test(line))
-  .map((line) => {
-    const parts = line.split('|').map((part) => part.trim());
-    return {
-      job: parts[0],
-      machine: parts[1],
-      route: parts[2],
-      etaRisk: parts[3],
-      priority: parts[4],
-      action: parts[5],
-      reason: parts.slice(6).join('|').trim(),
-    };
-  });
-
-if (rows.length === 0) {
-  throw new Error('mock-run output contained no job rows');
-}
+// Presentation only: routing, priority, and alert decisions belong to the shared engine.
+const rows = jobs.map((job) => ({
+  job: job.job_id,
+  machine: job.machine_type,
+  route: job.route,
+  etaRisk: job.eta_risk,
+  priority: job.priority,
+  action: job.action,
+  reason: job.classification_reason,
+}));
 
 const alertJobs = rows.filter((row) => row.action === 'ALERT').map((row) => row.job).sort();
 const expectedAlerts = ['J-1002', 'J-1005'];
@@ -40,9 +26,9 @@ if (JSON.stringify(alertJobs) !== JSON.stringify(expectedAlerts)) {
 }
 
 const payload = {
-  title: lines[0],
-  input: inputMatch[1],
-  today: inputMatch[2],
+  title: 'ForgeFlow offline rules demo (no AI or external delivery)',
+  input: 'sample-data/jobs.csv',
+  today: process.env.FORGEFLOW_TODAY,
   rows,
   raw,
 };
